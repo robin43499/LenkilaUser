@@ -14,7 +14,13 @@ protocol ContainerToMaster {
 
 class PageViewController: UIPageViewController, UIPageViewControllerDelegate,UIPageViewControllerDataSource, MasterToContainer {
     
+    
+    
+    
+    
+    
     var containerToMaster:ContainerToMaster?
+    
     //set up page array
     var viewControllerArray = [UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("News") as UIViewController,
                                UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Chat") as UIViewController,
@@ -26,11 +32,19 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate,UIP
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataSource = self
-        delegate = self
+        self.dataSource = self
+        self.delegate = self
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.view.alpha = 0.0
+        UIView.animateWithDuration(1.5, animations: {
+            self.view.alpha = 1.0
+        })
+    }
     override func viewWillAppear(animated: Bool) {
         self.setupPageViewController()
     }
@@ -48,7 +62,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate,UIP
     }
     
     func tapSegmentButtonAction(num: Int) {
-        print("1")
+        
         let tempIndex:Int = currentPageIndex
         weak var weakSelf = self
         //%%% check to see if you're going left -> right or right -> left
@@ -62,7 +76,9 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate,UIP
                     //then it updates the page that it's currently on
                     if complete {
                         weakSelf?.updateCurrentPageIndex(index)
+                        print("1")
                     }
+                    
                 })
             }
         }
@@ -77,7 +93,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate,UIP
                 })
             }
         }
-        setNeedsFocusUpdate()
+        
     }
 
 

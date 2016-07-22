@@ -16,6 +16,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let pageController:UIPageViewController = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
+        
+        let navigationController:MainPageViewControllers = MainPageViewControllers(rootViewController: pageController)
+        
+        // Override point for customization after application launch.
+        let demo:UIViewController = UIViewController()
+        let demo2:UIViewController = UIViewController()
+        let demo3:UIViewController = UIViewController()
+        let demo4:UIViewController = UIViewController()
+        let demo5:UIViewController = UIViewController()
+        demo.view.backgroundColor = UIColor.redColor()
+        demo2.view.backgroundColor = UIColor.whiteColor()
+        demo3.view.backgroundColor = UIColor.grayColor()
+        demo4.view.backgroundColor = UIColor.orangeColor()
+        
+        
+        navigationController.viewControllerArray = [demo,demo2,demo3,demo4]
+        
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+        
+
         
         
                

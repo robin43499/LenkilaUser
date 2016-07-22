@@ -18,6 +18,18 @@ class PageController: UIViewController,ContainerToMaster {
     var masterToContainer:MasterToContainer?
     var currentPageIndex: Int = 0
     
+    //img icon
+    @IBOutlet var img1: UIButton!
+    @IBOutlet var img2: UIButton!
+    @IBOutlet var img3: UIButton!
+    
+    @IBOutlet var navView: UIView!
+    
+    
+    
+    
+    
+    
     @IBOutlet var label: UILabel!
     
     @IBAction func findPitchButton(sender: AnyObject) {
@@ -25,7 +37,8 @@ class PageController: UIViewController,ContainerToMaster {
 //        masterToContainer?.setCurrentPageView(2)
 //        label.text = "\(currentIndex)"
 //        //PageViewController().setCurrentPageView(2)
-        PageViewController().tapSegmentButtonAction(2)
+        
+            PageViewController().tapSegmentButtonAction(2)
     }
     
     override func viewDidLoad() {
@@ -35,15 +48,22 @@ class PageController: UIViewController,ContainerToMaster {
 
         
     }
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         self.setLabelText()
-
-        
+        self.setupSelector()
     }
     func setLabelText(){
         label.text = "\(currentPageIndex)"
         
     }
+    
+    func setupSelector() {
+        let selectionBar = UIView(frame: CGRectMake(img1.frame.origin.x+100, img1.frame.origin.y,img1.frame.size.width/3, 4))
+        selectionBar.backgroundColor = UIColor.greenColor() //%%% sbcolor
+        selectionBar.alpha = 0.8; //%%% sbalpha
+        navView.addSubview(selectionBar)
+    }
+
 
 
     override func didReceiveMemoryWarning() {
@@ -55,13 +75,24 @@ class PageController: UIViewController,ContainerToMaster {
         currentPageIndex = newIndex
         self.setLabelText()
     }
-    
+//    func scrollViewDidScroll(scrollView: UIScrollView) {
+//        let xFromCenter:CGFloat = self.view.frame.size.width - pageScrollView.contentOffset.x //%%% positive for right swipe, negative for left
+//        
+//        //%%% checks to see what page you are on and adjusts the xCoor accordingly.
+//        //i.e. if you're on the second page, it makes sure that the bar starts from the frame.origin.x of the
+//        //second tab instead of the beginning
+//        let xCoor:CGFloat = X_BUFFER + selectionBar.frame.size.width * CGFloat(currentPageIndex) - X_OFFSET;
+//        
+//        selectionBar.frame = CGRectMake(xCoor-xFromCenter/CGFloat(3), selectionBar.frame.origin.y, selectionBar.frame.size.width, 4);
+//    }
+
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "containerViewSegue" {
             let pView = segue.destinationViewController as? PageViewController
             pView!.containerToMaster = self
-            //pView!.setCurrentPageView(currentIndex)
+            
+
         }
     }
     

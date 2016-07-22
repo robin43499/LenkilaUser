@@ -20,7 +20,7 @@
 		90A7BCE01D3F8B1200FE6C18 /* FindPitch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */; };
 		90A7BCEC1D4087B200FE6C18 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCEB1D4087B200FE6C18 /* PageViewController.swift */; };
 		90A7BCF01D40EFEC00FE6C18 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCEF1D40EFEC00FE6C18 /* PageController.swift */; };
-		90A7BCF21D414A1C00FE6C18 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCF11D414A1C00FE6C18 /* MainViewController.swift */; };
+		90A7BCF61D42A1DF00FE6C18 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCF51D42A1DF00FE6C18 /* MainPageViewController.swift */; };
 		910142D6D35D77054A9FB94F /* Pods_LenkilaUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103C7CF998BB704D4D748B00 /* Pods_LenkilaUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindPitch.storyboard; sourceTree = "<group>"; };
 		90A7BCEB1D4087B200FE6C18 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		90A7BCEF1D40EFEC00FE6C18 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
-		90A7BCF11D414A1C00FE6C18 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		90A7BCF51D42A1DF00FE6C18 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		9E206CE994D2A8CA0EE2DEA1 /* Pods-LenkilaUserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserUITests/Pods-LenkilaUserUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BD948BB6C481E5FC98FD8921 /* Pods-LenkilaUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser.debug.xcconfig"; sourceTree = "<group>"; };
 		C63F24E4A3FB794E01CC3A8F /* Pods-LenkilaUserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +151,7 @@
 				90A7BCE41D3F901800FE6C18 /* News */,
 				90A7BCE51D3F901F00FE6C18 /* Chat */,
 				90A7BCE61D3F902700FE6C18 /* FindPitch */,
+				90A7BCF51D42A1DF00FE6C18 /* MainPageViewController.swift */,
 				90A7BCEF1D40EFEC00FE6C18 /* PageController.swift */,
 				90A7BCEB1D4087B200FE6C18 /* PageViewController.swift */,
 				90A7BCB41D3F759F00FE6C18 /* Assets.xcassets */,
@@ -186,7 +187,6 @@
 				90A7BCDB1D3F8AF100FE6C18 /* News.storyboard */,
 				90A7BCDD1D3F8AFF00FE6C18 /* Chat.storyboard */,
 				90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */,
-				90A7BCF11D414A1C00FE6C18 /* MainViewController.swift */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -478,10 +478,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A7BCF61D42A1DF00FE6C18 /* MainPageViewController.swift in Sources */,
 				90A7BCF01D40EFEC00FE6C18 /* PageController.swift in Sources */,
 				90A7BCEC1D4087B200FE6C18 /* PageViewController.swift in Sources */,
 				90A7BCAC1D3F759F00FE6C18 /* AppDelegate.swift in Sources */,
-				90A7BCF21D414A1C00FE6C18 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
