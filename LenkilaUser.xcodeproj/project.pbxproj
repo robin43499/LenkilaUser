@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25D57325C1B4525CF56B7865 /* Pods_LenkilaUserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184F03D24F01B19779287687 /* Pods_LenkilaUserTests.framework */; };
+		3C945DAEA188AB295ACB2973 /* Pods_LenkilaUserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6D4C602A37C176DD5E6552 /* Pods_LenkilaUserUITests.framework */; };
 		90A7BCAC1D3F759F00FE6C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCAB1D3F759F00FE6C18 /* AppDelegate.swift */; };
 		90A7BCB31D3F759F00FE6C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCB11D3F759F00FE6C18 /* Main.storyboard */; };
 		90A7BCB51D3F759F00FE6C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCB41D3F759F00FE6C18 /* Assets.xcassets */; };
@@ -16,8 +18,10 @@
 		90A7BCDC1D3F8AF100FE6C18 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCDB1D3F8AF100FE6C18 /* News.storyboard */; };
 		90A7BCDE1D3F8AFF00FE6C18 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCDD1D3F8AFF00FE6C18 /* Chat.storyboard */; };
 		90A7BCE01D3F8B1200FE6C18 /* FindPitch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */; };
-		90A7BCEA1D40875B00FE6C18 /* PageContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCE91D40875B00FE6C18 /* PageContainerViewController.swift */; };
 		90A7BCEC1D4087B200FE6C18 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCEB1D4087B200FE6C18 /* PageViewController.swift */; };
+		90A7BCF01D40EFEC00FE6C18 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCEF1D40EFEC00FE6C18 /* PageController.swift */; };
+		90A7BCF21D414A1C00FE6C18 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCF11D414A1C00FE6C18 /* MainViewController.swift */; };
+		910142D6D35D77054A9FB94F /* Pods_LenkilaUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103C7CF998BB704D4D748B00 /* Pods_LenkilaUser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		103C7CF998BB704D4D748B00 /* Pods_LenkilaUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LenkilaUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1410A509234478C85901DDA4 /* Pods-LenkilaUserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		162C06B0B4B80D494E16BD32 /* Pods-LenkilaUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUser.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser.release.xcconfig"; sourceTree = "<group>"; };
+		184F03D24F01B19779287687 /* Pods_LenkilaUserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LenkilaUserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F6F490A049CCFC6F9EE0646 /* Pods-LenkilaUserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserUITests/Pods-LenkilaUserUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		90A7BCA81D3F759F00FE6C18 /* LenkilaUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LenkilaUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A7BCAB1D3F759F00FE6C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A7BCB21D3F759F00FE6C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,8 +62,13 @@
 		90A7BCDB1D3F8AF100FE6C18 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		90A7BCDD1D3F8AFF00FE6C18 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindPitch.storyboard; sourceTree = "<group>"; };
-		90A7BCE91D40875B00FE6C18 /* PageContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContainerViewController.swift; sourceTree = "<group>"; };
 		90A7BCEB1D4087B200FE6C18 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		90A7BCEF1D40EFEC00FE6C18 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		90A7BCF11D414A1C00FE6C18 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9E206CE994D2A8CA0EE2DEA1 /* Pods-LenkilaUserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserUITests/Pods-LenkilaUserUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD948BB6C481E5FC98FD8921 /* Pods-LenkilaUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser.debug.xcconfig"; sourceTree = "<group>"; };
+		C63F24E4A3FB794E01CC3A8F /* Pods-LenkilaUserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD6D4C602A37C176DD5E6552 /* Pods_LenkilaUserUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LenkilaUserUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910142D6D35D77054A9FB94F /* Pods_LenkilaUser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D57325C1B4525CF56B7865 /* Pods_LenkilaUserTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C945DAEA188AB295ACB2973 /* Pods_LenkilaUserUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CF83E670DA0018BE35491EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				103C7CF998BB704D4D748B00 /* Pods_LenkilaUser.framework */,
+				184F03D24F01B19779287687 /* Pods_LenkilaUserTests.framework */,
+				CD6D4C602A37C176DD5E6552 /* Pods_LenkilaUserUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EC6DD5D6C026270654CFC2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD948BB6C481E5FC98FD8921 /* Pods-LenkilaUser.debug.xcconfig */,
+				162C06B0B4B80D494E16BD32 /* Pods-LenkilaUser.release.xcconfig */,
+				1410A509234478C85901DDA4 /* Pods-LenkilaUserTests.debug.xcconfig */,
+				C63F24E4A3FB794E01CC3A8F /* Pods-LenkilaUserTests.release.xcconfig */,
+				6F6F490A049CCFC6F9EE0646 /* Pods-LenkilaUserUITests.debug.xcconfig */,
+				9E206CE994D2A8CA0EE2DEA1 /* Pods-LenkilaUserUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		90A7BC9F1D3F759F00FE6C18 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +129,8 @@
 				90A7BCC11D3F759F00FE6C18 /* LenkilaUserTests */,
 				90A7BCCC1D3F759F00FE6C18 /* LenkilaUserUITests */,
 				90A7BCA91D3F759F00FE6C18 /* Products */,
+				3EC6DD5D6C026270654CFC2F /* Pods */,
+				1CF83E670DA0018BE35491EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,7 +151,7 @@
 				90A7BCE41D3F901800FE6C18 /* News */,
 				90A7BCE51D3F901F00FE6C18 /* Chat */,
 				90A7BCE61D3F902700FE6C18 /* FindPitch */,
-				90A7BCE91D40875B00FE6C18 /* PageContainerViewController.swift */,
+				90A7BCEF1D40EFEC00FE6C18 /* PageController.swift */,
 				90A7BCEB1D4087B200FE6C18 /* PageViewController.swift */,
 				90A7BCB41D3F759F00FE6C18 /* Assets.xcassets */,
 				90A7BCAB1D3F759F00FE6C18 /* AppDelegate.swift */,
@@ -144,6 +186,7 @@
 				90A7BCDB1D3F8AF100FE6C18 /* News.storyboard */,
 				90A7BCDD1D3F8AFF00FE6C18 /* Chat.storyboard */,
 				90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */,
+				90A7BCF11D414A1C00FE6C18 /* MainViewController.swift */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -176,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A7BCD21D3F759F00FE6C18 /* Build configuration list for PBXNativeTarget "LenkilaUser" */;
 			buildPhases = (
+				16F4F12B6E1BA156C2333095 /* [CP] Check Pods Manifest.lock */,
 				90A7BCA41D3F759F00FE6C18 /* Sources */,
 				90A7BCA51D3F759F00FE6C18 /* Frameworks */,
 				90A7BCA61D3F759F00FE6C18 /* Resources */,
+				DB763CB366D174A4E260B19C /* [CP] Embed Pods Frameworks */,
+				2297B0DB592CC4ED9789D0FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A7BCD51D3F759F00FE6C18 /* Build configuration list for PBXNativeTarget "LenkilaUserTests" */;
 			buildPhases = (
+				870A05D84704EECF6A0AEE4C /* [CP] Check Pods Manifest.lock */,
 				90A7BCBA1D3F759F00FE6C18 /* Sources */,
 				90A7BCBB1D3F759F00FE6C18 /* Frameworks */,
 				90A7BCBC1D3F759F00FE6C18 /* Resources */,
+				62B3A98E012D21A2AB702598 /* [CP] Embed Pods Frameworks */,
+				6B75EF29E4865A2F6314EA3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A7BCD81D3F759F00FE6C18 /* Build configuration list for PBXNativeTarget "LenkilaUserUITests" */;
 			buildPhases = (
+				51AEF79940CC9DE2B5E0A8F0 /* [CP] Check Pods Manifest.lock */,
 				90A7BCC51D3F759F00FE6C18 /* Sources */,
 				90A7BCC61D3F759F00FE6C18 /* Frameworks */,
 				90A7BCC71D3F759F00FE6C18 /* Resources */,
+				3E539138CBE8D9ED4FC7A049 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,7 +288,7 @@
 				TargetAttributes = {
 					90A7BCA71D3F759F00FE6C18 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = KW6467J3NC;
+						DevelopmentTeam = ZTBG465V4E;
 					};
 					90A7BCBD1D3F759F00FE6C18 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -299,14 +350,138 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16F4F12B6E1BA156C2333095 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2297B0DB592CC4ED9789D0FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E539138CBE8D9ED4FC7A049 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LenkilaUserUITests/Pods-LenkilaUserUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51AEF79940CC9DE2B5E0A8F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62B3A98E012D21A2AB702598 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B75EF29E4865A2F6314EA3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		870A05D84704EECF6A0AEE4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB763CB366D174A4E260B19C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90A7BCA41D3F759F00FE6C18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A7BCF01D40EFEC00FE6C18 /* PageController.swift in Sources */,
 				90A7BCEC1D4087B200FE6C18 /* PageViewController.swift in Sources */,
-				90A7BCEA1D40875B00FE6C18 /* PageContainerViewController.swift in Sources */,
 				90A7BCAC1D3F759F00FE6C18 /* AppDelegate.swift in Sources */,
+				90A7BCF21D414A1C00FE6C18 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +621,7 @@
 		};
 		90A7BCD31D3F759F00FE6C18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD948BB6C481E5FC98FD8921 /* Pods-LenkilaUser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -460,6 +636,7 @@
 		};
 		90A7BCD41D3F759F00FE6C18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162C06B0B4B80D494E16BD32 /* Pods-LenkilaUser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -474,6 +651,7 @@
 		};
 		90A7BCD61D3F759F00FE6C18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1410A509234478C85901DDA4 /* Pods-LenkilaUserTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LenkilaUserTests/Info.plist;
@@ -486,6 +664,7 @@
 		};
 		90A7BCD71D3F759F00FE6C18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63F24E4A3FB794E01CC3A8F /* Pods-LenkilaUserTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LenkilaUserTests/Info.plist;
@@ -498,6 +677,7 @@
 		};
 		90A7BCD91D3F759F00FE6C18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F6F490A049CCFC6F9EE0646 /* Pods-LenkilaUserUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = LenkilaUserUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -509,6 +689,7 @@
 		};
 		90A7BCDA1D3F759F00FE6C18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E206CE994D2A8CA0EE2DEA1 /* Pods-LenkilaUserUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = LenkilaUserUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -537,6 +718,7 @@
 				90A7BCD41D3F759F00FE6C18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90A7BCD51D3F759F00FE6C18 /* Build configuration list for PBXNativeTarget "LenkilaUserTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +727,7 @@
 				90A7BCD71D3F759F00FE6C18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90A7BCD81D3F759F00FE6C18 /* Build configuration list for PBXNativeTarget "LenkilaUserUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +736,7 @@
 				90A7BCDA1D3F759F00FE6C18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

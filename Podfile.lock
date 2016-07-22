@@ -1,0 +1,12 @@
+PODS:
+  - SwipeViewController (0.1.3)
+
+DEPENDENCIES:
+  - SwipeViewController
+
+SPEC CHECKSUMS:
+  SwipeViewController: 5324f87cc621b12f996c185da6ce0b35f98af681
+
+PODFILE CHECKSUM: 9e15ed9a2cebeef316af13ff2d60bbaf1673644c
+
+COCOAPODS: 1.0.1

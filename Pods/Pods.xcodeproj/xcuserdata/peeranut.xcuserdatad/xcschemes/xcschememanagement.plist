@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-LenkilaUser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LenkilaUserTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LenkilaUserUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwipeViewController-SwipeViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwipeViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>05BCF07CAFE8CD590438EA91013C953F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>354A417536A2E0DA04BB13930C530F29</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>369284326AC0DB7ABAA9185922DD8884</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A429366507C7B55D5A4F30896895881</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8FB2D91BC6E7BC012B467A6791717B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

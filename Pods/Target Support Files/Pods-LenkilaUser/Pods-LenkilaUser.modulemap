@@ -1,0 +1,6 @@
+framework module Pods_LenkilaUser {
+  umbrella header "Pods-LenkilaUser-umbrella.h"
+
+  export *
+  module * { export * }
+}

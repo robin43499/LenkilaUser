@@ -8,107 +8,129 @@
 
 import UIKit
 
-class PageViewController: UIPageViewController,UIPageViewControllerDataSource {
+protocol ContainerToMaster {
+    func updateCurrentPageIndex(newIndex:Int)
+}
 
-    private(set) lazy var orderedViewControllers: [UIViewController] = {
-        return [self.listViewController("News"),
-                self.listViewController("Chat"),
-                self.listViewController("FindPitch")]
-    }()
+class PageViewController: UIPageViewController, UIPageViewControllerDelegate,UIPageViewControllerDataSource, MasterToContainer {
     
-    private func listViewController(list: String) -> UIViewController {
-        
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("\(list)")
-    }
-    var  tutorialDelegate: PageViewControllerDelegate?
+    var containerToMaster:ContainerToMaster?
+    //set up page array
+    var viewControllerArray = [UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("News") as UIViewController,
+                               UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Chat") as UIViewController,
+                               UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FindPitch") as UIViewController]
     
+    var currentPageIndex: Int = 0
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dataSource = self
         delegate = self
         
-        
-        if let firstViewController = orderedViewControllers.first {
-            setViewControllers([firstViewController],direction: .Forward,animated: true,completion: nil)
-        }
-        
-        tutorialDelegate?.pageViewController(self,didUpdatePageCount: orderedViewControllers.count)
-        
- 
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.setupPageViewController()
+    }
+    
+    //%%% generic setup stuff for a pageview controller.  Sets up the scrolling style and delegate for the controller
+    func setupPageViewController() {
+        self.delegate = self
+        self.dataSource = self
+        self.setViewControllers([viewControllerArray[0]], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
+    }
+    
+    func updateCurrentPageIndex(newIndex:Int) {
+        currentPageIndex = newIndex
+        containerToMaster?.updateCurrentPageIndex(newIndex)
+    }
+    
+    func tapSegmentButtonAction(num: Int) {
+        print("1")
+        let tempIndex:Int = currentPageIndex
+        weak var weakSelf = self
+        //%%% check to see if you're going left -> right or right -> left
+        if num > tempIndex {
+            //%%% scroll through all the objects between the two points
+            for var i = tempIndex+1 ; i <= num ; i++ {
+                let index = i
+                self.setViewControllers([viewControllerArray[i]], direction:UIPageViewControllerNavigationDirection.Forward, animated: true, completion: {complete in
+                    
+                    //%%% if the action finishes scrolling (i.e. the user doesn't stop it in the middle),
+                    //then it updates the page that it's currently on
+                    if complete {
+                        weakSelf?.updateCurrentPageIndex(index)
+                    }
+                })
+            }
+        }
+            //%%% this is the same thing but for going right -> left
+        else if num < tempIndex {
+            for var i = tempIndex-1 ; i >= num ; i-- {
+                let index = i
+                self.setViewControllers([viewControllerArray[i]], direction: UIPageViewControllerNavigationDirection.Reverse, animated: true, completion: {complete in
+                    if complete {
+                        weakSelf?.updateCurrentPageIndex(index)
+                    }
+                })
+            }
+        }
+        setNeedsFocusUpdate()
+    }
+
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
     func pageViewController(pageViewController: UIPageViewController,viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = orderedViewControllers.indexOf(viewController) else {
+        var index :Int = self.indexOfController(viewController);
+        if (index == NSNotFound) {
             return nil
         }
-        
-        let previousIndex = viewControllerIndex - 1
-        
-        guard previousIndex >= 0 else {
-            return nil
+        index--
+        if (0 <= index && index < viewControllerArray.count) {
+            return viewControllerArray[index]
         }
-        
-        guard orderedViewControllers.count > previousIndex else {
-            return nil
-        }
-        
-        return orderedViewControllers[previousIndex]
+        return nil
     }
     
     func pageViewController(pageViewController: UIPageViewController,viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = orderedViewControllers.indexOf(viewController) else {
+        var index :Int = self.indexOfController(viewController)
+        if (index == NSNotFound) {
             return nil
         }
-        
-        let nextIndex = viewControllerIndex + 1
-        let orderedViewControllersCount = orderedViewControllers.count
-        
-        guard orderedViewControllersCount != nextIndex else {
-            return nil
+        index++
+        if (0 <= index && index < viewControllerArray.count) {
+            return viewControllerArray[index]
         }
-        
-        guard orderedViewControllersCount > nextIndex else {
-            return nil
+        return nil
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if (completed) {
+            //currentPageIndex = self.indexOfController(pageViewController.viewControllers!.last! as UIViewController)
+            updateCurrentPageIndex(self.indexOfController(pageViewController.viewControllers!.last! as UIViewController))
         }
-        
-        return orderedViewControllers[nextIndex]
+    }
+
+    
+    func indexOfController(viewController :UIViewController) -> Int {
+        for (var i = 0 ; i < viewControllerArray.count ; i++) {
+            if (viewController == viewControllerArray[i]) {
+                return i
+            }
+        }
+        return NSNotFound
     }
     
     
-}
 
+    
 
-extension PageViewController: UIPageViewControllerDelegate {
-    
-    
-    
-    func pageViewController(pageViewController: UIPageViewController,didFinishAnimating finished: Bool,previousViewControllers: [UIViewController],transitionCompleted completed: Bool) {
-        if let firstViewController = viewControllers?.first,
-            let index = orderedViewControllers.indexOf(firstViewController) {
-            tutorialDelegate?.pageViewController(self,didUpdatePageIndex: index)
-        }
-    }
-    
     
 }
 
-protocol PageViewControllerDelegate: class {
-    
-    /**
-     Called when the number of pages is updated.
-     
-     - parameter tutorialPageViewController: the TutorialPageViewController instance
-     - parameter count: the total number of pages.
-     */
-    func pageViewController(pageViewController: PageViewController,didUpdatePageCount count: Int)
-    
-    /**
-     Called when the current index is updated.
-     
-     - parameter tutorialPageViewController: the TutorialPageViewController instance
-     - parameter index: the index of the currently visible page.
-     */
-    func pageViewController(pageViewController: PageViewController,didUpdatePageIndex index: Int)
-    
-}
