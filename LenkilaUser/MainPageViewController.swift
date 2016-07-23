@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 //%%% customizeable button attributes
 let X_BUFFER:CGFloat = 0  //%%% the number of pixels on either side of the segment
@@ -23,8 +24,7 @@ let X_OFFSET:CGFloat = 8 //%%% for some reason there's a little bit of a glitchy
 protocol MainPageViewControllersDelegate {
 }
 
-class MainPageViewControllers: UINavigationController,UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIScrollViewDelegate
-{
+class MainPageViewControllers: UINavigationController,UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIScrollViewDelegate {
     required override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         pageScrollView = UIScrollView()
         pageController = UIPageViewController()
@@ -63,7 +63,7 @@ class MainPageViewControllers: UINavigationController,UIPageViewControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationBar.barTintColor = UIColor(red:0.01, green:0.05, blue:0.06, alpha:1) //%%% bartint
+        self.navigationBar.barTintColor = UIColor.whiteColor() //%%% bartint
         self.navigationBar.translucent = false
     }
     
@@ -90,18 +90,38 @@ class MainPageViewControllers: UINavigationController,UIPageViewControllerDelega
             buttonText = ["first","second","third","fourth","etc","etc","etc","etc"] //%%%buttontitle
         }
         
-        for (var i = 0 ; i < numControllers; i++) {
-            let frame :CGRect = CGRectMake(X_BUFFER+CGFloat(i)*(self.view.frame.size.width-2*X_BUFFER)/CGFloat(numControllers)-X_OFFSET, Y_BUFFER, (self.view.frame.size.width-2*X_BUFFER)/CGFloat(numControllers), HEIGHT)
-            let button :UIButton = UIButton(frame: frame)
-            navigationView.addSubview(button)
-            
-            button.tag = i //%%% IMPORTANT: if you make your own custom buttons, you have to tag them appropriately
-            button.backgroundColor = UIColor(red: 0.03, green: 0.07, blue: 0.08, alpha: 1) //%%% buttoncolors
-            button.addTarget(self, action: "tapSegmentButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-            button.setTitle(buttonText[i], forState:UIControlState.Normal) //%%%buttontitle
-        }
+//        for (var i = 0 ; i < numControllers; i++) {
+////            let frame :CGRect = CGRectMake(X_BUFFER+CGFloat(i)*(self.view.frame.size.width-2*X_BUFFER)/CGFloat(numControllers)-X_OFFSET, Y_BUFFER, (self.view.frame.size.width-2*X_BUFFER)/CGFloat(numControllers), HEIGHT)
+//            let frame :CGRect = CGRectMake(X_BUFFER+CGFloat(i)*(self.view.frame.size.width-2*X_BUFFER)/CGFloat(numControllers)-X_OFFSET, Y_BUFFER, HEIGHT, HEIGHT)
+//            let button :UIButton = UIButton(frame: frame)
+//            navigationView.addSubview(button)
+//            
+//            button.tag = i //%%% IMPORTANT: if you make your own custom buttons, you have to tag them appropriately
+//            //button.backgroundColor = UIColor(red: 0.03, green: 0.07, blue: 0.08, alpha: 1) //%%% buttoncolors
+//            button.addTarget(self, action: "tapSegmentButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+//            button.setImage(UIImage(named:"Image-1"), forState: UIControlState.Normal)
+//            //button.setTitle(buttonText[i], forState:UIControlState.Normal) //%%%buttontitle
+//        }
+        
+        let frame :CGRect = CGRectMake(0, 0, self.navigationBar.frame.size.height-4, self.navigationBar.frame.size.height-4)
+        let button :UIButton = UIButton(frame: frame)
+        navigationView.addSubview(button)
+        button.setTitle("Menu", forState:UIControlState.Normal)
+        button.backgroundColor = UIColor(red: 0.03, green: 0.07, blue: 0.08, alpha: 1)
         
         pageController.navigationController?.navigationBar.topItem?.titleView = navigationView
+        
+        
+        
+//        let btnName = UIButton()
+//        btnName.setTitle("Menu", forState: .Normal)
+//        btnName.frame = CGRectMake(0, 0, 30, 30)
+//        btnName.addTarget(self, action: Selector("action"), forControlEvents: .TouchUpInside)
+//        
+//        //.... Set Right/Left Bar Button item
+//        let rightBarButton = UIBarButtonItem()
+//        rightBarButton.customView = btnName
+//        pageController.navigationController?.navigationItem.leftBarButtonItem = rightBarButton
         
         self.setupSelector()
     }

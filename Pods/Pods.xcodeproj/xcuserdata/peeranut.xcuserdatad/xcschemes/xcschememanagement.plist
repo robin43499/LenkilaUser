@@ -29,10 +29,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YALSideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>05BCF07CAFE8CD590438EA91013C953F</key>
+		<key>07B4732B8A51C863342E3546438533FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A429366507C7B55D5A4F30896895881</key>
+		<key>520356E8AA24E04D587058272C994D7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A8FB2D91BC6E7BC012B467A6791717B4</key>
+		<key>74CA2C8DF83AB686C5FC929BAB489039</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7BB19DB74955680718477049FA9138B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

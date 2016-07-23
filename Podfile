@@ -6,6 +6,7 @@ target 'LenkilaUser' do
   use_frameworks!
 
 	pod "SwipeViewController"
+	pod 'YALSideMenu'
 
   # Pods for LenkilaUser
 

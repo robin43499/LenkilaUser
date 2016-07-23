@@ -22,19 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navigationController:MainPageViewControllers = MainPageViewControllers(rootViewController: pageController)
         
-        // Override point for customization after application launch.
-        let demo:UIViewController = UIViewController()
-        let demo2:UIViewController = UIViewController()
-        let demo3:UIViewController = UIViewController()
-        let demo4:UIViewController = UIViewController()
-        let demo5:UIViewController = UIViewController()
-        demo.view.backgroundColor = UIColor.redColor()
-        demo2.view.backgroundColor = UIColor.whiteColor()
-        demo3.view.backgroundColor = UIColor.grayColor()
-        demo4.view.backgroundColor = UIColor.orangeColor()
+//        // Override point for customization after application launch.
+//        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("News") as UIViewController,
+//        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Chat") as UIViewController,
+//        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FindPitch") as UIViewController]
+        let demo:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("News") as UIViewController
+        let demo2:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Chat") as UIViewController
+        let demo3:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FindPitch") as UIViewController
         
-        
-        navigationController.viewControllerArray = [demo,demo2,demo3,demo4]
+        navigationController.viewControllerArray = [demo,demo2,demo3]
         
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()

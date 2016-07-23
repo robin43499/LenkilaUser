@@ -12,7 +12,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="CGu-NO-a6j" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlQ-9q-5AT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="46"/>
+            <point key="canvasLocation" x="4251" y="-1842"/>
         </scene>
         <!--FindPitch-->
         <scene sceneID="kba-vr-naH">
@@ -20,7 +20,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="FindPitch" storyboardName="FindPitch" referencedIdentifier="FindPitch" id="mlb-yB-MBM" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IX-e7-uHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2125.5" y="267"/>
+            <point key="canvasLocation" x="3760.5" y="317"/>
         </scene>
         <!--Main Page View Controllers-->
         <scene sceneID="hNP-wI-5Dt">
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOD-Zh-y1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215.5" y="803"/>
+            <point key="canvasLocation" x="3217.5" y="261"/>
         </scene>
         <!--Page Controller-->
         <scene sceneID="EDm-BT-9MC">
@@ -279,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yc3-Wz-ASP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1459.5" y="71"/>
+            <point key="canvasLocation" x="4984.5" y="-1737"/>
         </scene>
         <!--News-->
         <scene sceneID="Afe-sK-3nk">
@@ -287,7 +287,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="News" storyboardName="News" referencedIdentifier="News" id="FrW-KY-sxt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1z-2S-iKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2108.25" y="147"/>
+            <point key="canvasLocation" x="3742.5" y="197"/>
         </scene>
         <!--Chat-->
         <scene sceneID="bSK-Yi-5OY">
@@ -295,7 +295,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Chat" storyboardName="Chat" referencedIdentifier="Chat" id="37l-HT-Kbz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3TI-O7-CO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2103.75" y="211"/>
+            <point key="canvasLocation" x="3738.75" y="261"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="YoW-IP-reo">
@@ -303,7 +303,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="fmk-wZ-i8T" customClass="PageViewController" customModule="LenkilaUser" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGG-53-zBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143" y="845"/>
+            <point key="canvasLocation" x="4635" y="-1159"/>
         </scene>
     </scenes>
     <resources>
