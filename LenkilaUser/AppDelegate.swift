@@ -12,33 +12,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let pageController:UIPageViewController = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
-        
-        let navigationController:MainPageViewControllers = MainPageViewControllers(rootViewController: pageController)
-        
-//        // Override point for customization after application launch.
-//        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("News") as UIViewController,
-//        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Chat") as UIViewController,
-//        UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FindPitch") as UIViewController]
-        let demo:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("News") as UIViewController
-        let demo2:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Chat") as UIViewController
-        let demo3:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FindPitch") as UIViewController
-        
-        navigationController.viewControllerArray = [demo,demo2,demo3]
-        
-        self.window?.rootViewController = navigationController
-        self.window?.makeKeyAndVisible()
-        
-
-        
-        
-               
         return true
     }
 
