@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Z81-Rx-llp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Z81-Rx-llp">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -12,7 +12,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="CGu-NO-a6j" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlQ-9q-5AT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="46"/>
+            <point key="canvasLocation" x="594" y="256"/>
         </scene>
         <!--FindPitch-->
         <scene sceneID="kba-vr-naH">
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOD-Zh-y1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215.5" y="803"/>
+            <point key="canvasLocation" x="1945.5" y="749"/>
         </scene>
         <!--Page Controller-->
         <scene sceneID="EDm-BT-9MC">
@@ -236,16 +236,16 @@
                                 <exclude reference="auT-h5-dSb"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="W4O-Ko-Z5d"/>
-                                <exclude reference="ixR-e0-nB1"/>
-                                <exclude reference="ywU-c1-web"/>
+                                <exclude reference="rJM-BW-fqw"/>
+                                <exclude reference="nwL-aE-TkW"/>
+                                <exclude reference="u73-hh-rda"/>
                                 <exclude reference="UDk-Vk-aB6"/>
                                 <exclude reference="XUe-P5-mIR"/>
                                 <exclude reference="d93-kR-pSP"/>
                                 <exclude reference="eli-P7-YLg"/>
-                                <exclude reference="nwL-aE-TkW"/>
-                                <exclude reference="u73-hh-rda"/>
-                                <exclude reference="rJM-BW-fqw"/>
+                                <exclude reference="W4O-Ko-Z5d"/>
+                                <exclude reference="ixR-e0-nB1"/>
+                                <exclude reference="ywU-c1-web"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -255,16 +255,16 @@
                                 <include reference="auT-h5-dSb"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="W4O-Ko-Z5d"/>
-                                <include reference="ixR-e0-nB1"/>
-                                <include reference="ywU-c1-web"/>
+                                <include reference="rJM-BW-fqw"/>
+                                <include reference="nwL-aE-TkW"/>
+                                <include reference="u73-hh-rda"/>
                                 <include reference="UDk-Vk-aB6"/>
                                 <exclude reference="XUe-P5-mIR"/>
                                 <include reference="d93-kR-pSP"/>
                                 <include reference="eli-P7-YLg"/>
-                                <include reference="nwL-aE-TkW"/>
-                                <include reference="u73-hh-rda"/>
-                                <include reference="rJM-BW-fqw"/>
+                                <include reference="W4O-Ko-Z5d"/>
+                                <include reference="ixR-e0-nB1"/>
+                                <include reference="ywU-c1-web"/>
                             </mask>
                         </variation>
                     </view>
@@ -287,7 +287,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="News" storyboardName="News" referencedIdentifier="News" id="FrW-KY-sxt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1z-2S-iKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2108.25" y="147"/>
+            <point key="canvasLocation" x="2392.5" y="601"/>
         </scene>
         <!--Chat-->
         <scene sceneID="bSK-Yi-5OY">
