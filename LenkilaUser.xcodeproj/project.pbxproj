@@ -25,6 +25,9 @@
 		90A7BD051D43C19B00FE6C18 /* MenuButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BD041D43C19B00FE6C18 /* MenuButtonViewController.swift */; };
 		90A7BD481D45F65100FE6C18 /* SwipeBetweenViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BD471D45F65100FE6C18 /* SwipeBetweenViewControllers.swift */; };
 		910142D6D35D77054A9FB94F /* Pods_LenkilaUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103C7CF998BB704D4D748B00 /* Pods_LenkilaUser.framework */; };
+		B72315121D477B4900B6E018 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72315111D477B4900B6E018 /* FirstPageViewController.swift */; };
+		B776868E1D478C69001D8781 /* MainNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776868D1D478C69001D8781 /* MainNewsViewController.swift */; };
+		B77686901D47A9CD001D8781 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B776868F1D47A9CD001D8781 /* Homepage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		90A7BD041D43C19B00FE6C18 /* MenuButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButtonViewController.swift; sourceTree = "<group>"; };
 		90A7BD471D45F65100FE6C18 /* SwipeBetweenViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeBetweenViewControllers.swift; sourceTree = "<group>"; };
 		9E206CE994D2A8CA0EE2DEA1 /* Pods-LenkilaUserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserUITests/Pods-LenkilaUserUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B72315111D477B4900B6E018 /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		B776868D1D478C69001D8781 /* MainNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNewsViewController.swift; sourceTree = "<group>"; };
+		B776868F1D47A9CD001D8781 /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
 		BD948BB6C481E5FC98FD8921 /* Pods-LenkilaUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser.debug.xcconfig"; sourceTree = "<group>"; };
 		C63F24E4A3FB794E01CC3A8F /* Pods-LenkilaUserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD6D4C602A37C176DD5E6552 /* Pods_LenkilaUserUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LenkilaUserUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +198,8 @@
 				90A7BCDB1D3F8AF100FE6C18 /* News.storyboard */,
 				90A7BCDD1D3F8AFF00FE6C18 /* Chat.storyboard */,
 				90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */,
+				B776868F1D47A9CD001D8781 /* Homepage.storyboard */,
+				B72315111D477B4900B6E018 /* FirstPageViewController.swift */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 		90A7BCE41D3F901800FE6C18 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				B776868D1D478C69001D8781 /* MainNewsViewController.swift */,
 			);
 			name = News;
 			sourceTree = "<group>";
@@ -350,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77686901D47A9CD001D8781 /* Homepage.storyboard in Resources */,
 				90A7BCE01D3F8B1200FE6C18 /* FindPitch.storyboard in Resources */,
 				90A7BCB81D3F759F00FE6C18 /* LaunchScreen.storyboard in Resources */,
 				90A7BCB51D3F759F00FE6C18 /* Assets.xcassets in Resources */,
@@ -507,6 +517,8 @@
 				90A7BCFE1D43BC7700FE6C18 /* CircularRevealAnimator.swift in Sources */,
 				90A7BD051D43C19B00FE6C18 /* MenuButtonViewController.swift in Sources */,
 				90A7BD021D43BD3D00FE6C18 /* AnimationDelegate.swift in Sources */,
+				B72315121D477B4900B6E018 /* FirstPageViewController.swift in Sources */,
+				B776868E1D478C69001D8781 /* MainNewsViewController.swift in Sources */,
 				90A7BD001D43BC7E00FE6C18 /* CircularRevealTransitionAnimator.swift in Sources */,
 				90A7BCAC1D3F759F00FE6C18 /* AppDelegate.swift in Sources */,
 				90A7BD481D45F65100FE6C18 /* SwipeBetweenViewControllers.swift in Sources */,
