@@ -1,12 +1,15 @@
 PODS:
   - SwipeViewController (0.1.3)
+  - YALSideMenu (1.2.0)
 
 DEPENDENCIES:
   - SwipeViewController
+  - YALSideMenu
 
 SPEC CHECKSUMS:
   SwipeViewController: 5324f87cc621b12f996c185da6ce0b35f98af681
+  YALSideMenu: da4847fb57b724482040751bf02b9b97f7b89819
 
-PODFILE CHECKSUM: 9e15ed9a2cebeef316af13ff2d60bbaf1673644c
+PODFILE CHECKSUM: ba62ffe836f3083710a9a161e0bf91be974d9caf
 
 COCOAPODS: 1.0.1

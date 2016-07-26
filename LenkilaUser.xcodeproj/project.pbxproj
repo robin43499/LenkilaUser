@@ -18,9 +18,12 @@
 		90A7BCDC1D3F8AF100FE6C18 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCDB1D3F8AF100FE6C18 /* News.storyboard */; };
 		90A7BCDE1D3F8AFF00FE6C18 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCDD1D3F8AFF00FE6C18 /* Chat.storyboard */; };
 		90A7BCE01D3F8B1200FE6C18 /* FindPitch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */; };
-		90A7BCEC1D4087B200FE6C18 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCEB1D4087B200FE6C18 /* PageViewController.swift */; };
-		90A7BCF01D40EFEC00FE6C18 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCEF1D40EFEC00FE6C18 /* PageController.swift */; };
-		90A7BCF61D42A1DF00FE6C18 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCF51D42A1DF00FE6C18 /* MainPageViewController.swift */; };
+		90A7BCFB1D43B47300FE6C18 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCFA1D43B47300FE6C18 /* MenuViewController.swift */; };
+		90A7BCFE1D43BC7700FE6C18 /* CircularRevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCFD1D43BC7700FE6C18 /* CircularRevealAnimator.swift */; };
+		90A7BD001D43BC7E00FE6C18 /* CircularRevealTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCFF1D43BC7E00FE6C18 /* CircularRevealTransitionAnimator.swift */; };
+		90A7BD021D43BD3D00FE6C18 /* AnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BD011D43BD3D00FE6C18 /* AnimationDelegate.swift */; };
+		90A7BD051D43C19B00FE6C18 /* MenuButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BD041D43C19B00FE6C18 /* MenuButtonViewController.swift */; };
+		90A7BD481D45F65100FE6C18 /* SwipeBetweenViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BD471D45F65100FE6C18 /* SwipeBetweenViewControllers.swift */; };
 		910142D6D35D77054A9FB94F /* Pods_LenkilaUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103C7CF998BB704D4D748B00 /* Pods_LenkilaUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,9 +65,12 @@
 		90A7BCDB1D3F8AF100FE6C18 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		90A7BCDD1D3F8AFF00FE6C18 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindPitch.storyboard; sourceTree = "<group>"; };
-		90A7BCEB1D4087B200FE6C18 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		90A7BCEF1D40EFEC00FE6C18 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
-		90A7BCF51D42A1DF00FE6C18 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		90A7BCFA1D43B47300FE6C18 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		90A7BCFD1D43BC7700FE6C18 /* CircularRevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealAnimator.swift; sourceTree = "<group>"; };
+		90A7BCFF1D43BC7E00FE6C18 /* CircularRevealTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealTransitionAnimator.swift; sourceTree = "<group>"; };
+		90A7BD011D43BD3D00FE6C18 /* AnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationDelegate.swift; sourceTree = "<group>"; };
+		90A7BD041D43C19B00FE6C18 /* MenuButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButtonViewController.swift; sourceTree = "<group>"; };
+		90A7BD471D45F65100FE6C18 /* SwipeBetweenViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeBetweenViewControllers.swift; sourceTree = "<group>"; };
 		9E206CE994D2A8CA0EE2DEA1 /* Pods-LenkilaUserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserUITests/Pods-LenkilaUserUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BD948BB6C481E5FC98FD8921 /* Pods-LenkilaUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser.debug.xcconfig"; sourceTree = "<group>"; };
 		C63F24E4A3FB794E01CC3A8F /* Pods-LenkilaUserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,16 +154,15 @@
 			isa = PBXGroup;
 			children = (
 				90A7BCE31D3F8B4F00FE6C18 /* Storyboard */,
+				90A7BD031D43C0A300FE6C18 /* Controller */,
 				90A7BCE41D3F901800FE6C18 /* News */,
 				90A7BCE51D3F901F00FE6C18 /* Chat */,
 				90A7BCE61D3F902700FE6C18 /* FindPitch */,
-				90A7BCF51D42A1DF00FE6C18 /* MainPageViewController.swift */,
-				90A7BCEF1D40EFEC00FE6C18 /* PageController.swift */,
-				90A7BCEB1D4087B200FE6C18 /* PageViewController.swift */,
 				90A7BCB41D3F759F00FE6C18 /* Assets.xcassets */,
 				90A7BCAB1D3F759F00FE6C18 /* AppDelegate.swift */,
 				90A7BCB61D3F759F00FE6C18 /* LaunchScreen.storyboard */,
 				90A7BCB91D3F759F00FE6C18 /* Info.plist */,
+				90A7BCFC1D43BC6600FE6C18 /* Misc */,
 			);
 			path = LenkilaUser;
 			sourceTree = "<group>";
@@ -210,6 +215,26 @@
 			children = (
 			);
 			name = FindPitch;
+			sourceTree = "<group>";
+		};
+		90A7BCFC1D43BC6600FE6C18 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				90A7BCFD1D43BC7700FE6C18 /* CircularRevealAnimator.swift */,
+				90A7BCFF1D43BC7E00FE6C18 /* CircularRevealTransitionAnimator.swift */,
+				90A7BD011D43BD3D00FE6C18 /* AnimationDelegate.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		90A7BD031D43C0A300FE6C18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				90A7BCFA1D43B47300FE6C18 /* MenuViewController.swift */,
+				90A7BD041D43C19B00FE6C18 /* MenuButtonViewController.swift */,
+				90A7BD471D45F65100FE6C18 /* SwipeBetweenViewControllers.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,10 +503,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A7BCF61D42A1DF00FE6C18 /* MainPageViewController.swift in Sources */,
-				90A7BCF01D40EFEC00FE6C18 /* PageController.swift in Sources */,
-				90A7BCEC1D4087B200FE6C18 /* PageViewController.swift in Sources */,
+				90A7BCFB1D43B47300FE6C18 /* MenuViewController.swift in Sources */,
+				90A7BCFE1D43BC7700FE6C18 /* CircularRevealAnimator.swift in Sources */,
+				90A7BD051D43C19B00FE6C18 /* MenuButtonViewController.swift in Sources */,
+				90A7BD021D43BD3D00FE6C18 /* AnimationDelegate.swift in Sources */,
+				90A7BD001D43BC7E00FE6C18 /* CircularRevealTransitionAnimator.swift in Sources */,
 				90A7BCAC1D3F759F00FE6C18 /* AppDelegate.swift in Sources */,
+				90A7BD481D45F65100FE6C18 /* SwipeBetweenViewControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
