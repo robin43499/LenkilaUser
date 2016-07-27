@@ -29,6 +29,11 @@
 		B72315121D477B4900B6E018 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72315111D477B4900B6E018 /* FirstPageViewController.swift */; };
 		B776868E1D478C69001D8781 /* MainNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776868D1D478C69001D8781 /* MainNewsViewController.swift */; };
 		B77686901D47A9CD001D8781 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B776868F1D47A9CD001D8781 /* Home.storyboard */; };
+		B79DCFAA1D48B92F0016B703 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79DCFA91D48B92F0016B703 /* FBSDKShareKit.framework */; };
+		B79DCFAC1D48B9370016B703 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79DCFAB1D48B9370016B703 /* FBSDKCoreKit.framework */; };
+		B79DCFAE1D48B93D0016B703 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79DCFAD1D48B93D0016B703 /* FBSDKLoginKit.framework */; };
+		B7B507501D48BD3800D625D6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B5074F1D48BD3800D625D6 /* Bolts.framework */; };
+		B7FEA3721D48ADE500EC882F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FEA3711D48ADE500EC882F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,12 @@
 		B72315111D477B4900B6E018 /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
 		B776868D1D478C69001D8781 /* MainNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNewsViewController.swift; sourceTree = "<group>"; };
 		B776868F1D47A9CD001D8781 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B79DCFA91D48B92F0016B703 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		B79DCFAB1D48B9370016B703 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		B79DCFAD1D48B93D0016B703 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		B7B5074F1D48BD3800D625D6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B7B507511D48C3DA00D625D6 /* SignInExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignInExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B7FEA3711D48ADE500EC882F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD948BB6C481E5FC98FD8921 /* Pods-LenkilaUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser.debug.xcconfig"; sourceTree = "<group>"; };
 		C63F24E4A3FB794E01CC3A8F /* Pods-LenkilaUserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD6D4C602A37C176DD5E6552 /* Pods_LenkilaUserUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LenkilaUserUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +101,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B507501D48BD3800D625D6 /* Bolts.framework in Frameworks */,
+				B79DCFAA1D48B92F0016B703 /* FBSDKShareKit.framework in Frameworks */,
+				B79DCFAC1D48B9370016B703 /* FBSDKCoreKit.framework in Frameworks */,
+				B79DCFAE1D48B93D0016B703 /* FBSDKLoginKit.framework in Frameworks */,
 				910142D6D35D77054A9FB94F /* Pods_LenkilaUser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +168,10 @@
 		90A7BC9F1D3F759F00FE6C18 = {
 			isa = PBXGroup;
 			children = (
+				B7B5074F1D48BD3800D625D6 /* Bolts.framework */,
+				B79DCFAD1D48B93D0016B703 /* FBSDKLoginKit.framework */,
+				B79DCFAB1D48B9370016B703 /* FBSDKCoreKit.framework */,
+				B79DCFA91D48B92F0016B703 /* FBSDKShareKit.framework */,
 				90A7BCAA1D3F759F00FE6C18 /* LenkilaUser */,
 				90A7BCC11D3F759F00FE6C18 /* LenkilaUserTests */,
 				90A7BCCC1D3F759F00FE6C18 /* LenkilaUserUITests */,
@@ -175,6 +194,7 @@
 		90A7BCAA1D3F759F00FE6C18 /* LenkilaUser */ = {
 			isa = PBXGroup;
 			children = (
+				B7FEA3701D48ADD600EC882F /* Login */,
 				90A7BCE31D3F8B4F00FE6C18 /* Storyboard */,
 				90A7BD031D43C0A300FE6C18 /* Controller */,
 				9058D6761D4884990092329B /* Home */,
@@ -187,6 +207,7 @@
 				90A7BCB61D3F759F00FE6C18 /* LaunchScreen.storyboard */,
 				90A7BCB91D3F759F00FE6C18 /* Info.plist */,
 				90A7BCFC1D43BC6600FE6C18 /* Misc */,
+				B7B507511D48C3DA00D625D6 /* SignInExampleSwift-Bridging-Header.h */,
 			);
 			path = LenkilaUser;
 			sourceTree = "<group>";
@@ -218,7 +239,6 @@
 				9058D6781D48851F0092329B /* Articles.storyboard */,
 				90A7BCDD1D3F8AFF00FE6C18 /* Chat.storyboard */,
 				90A7BCDF1D3F8B1200FE6C18 /* FindPitch.storyboard */,
-				B72315111D477B4900B6E018 /* FirstPageViewController.swift */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -265,6 +285,15 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		B7FEA3701D48ADD600EC882F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B72315111D477B4900B6E018 /* FirstPageViewController.swift */,
+				B7FEA3711D48ADE500EC882F /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,6 +307,7 @@
 				90A7BCA61D3F759F00FE6C18 /* Resources */,
 				DB763CB366D174A4E260B19C /* [CP] Embed Pods Frameworks */,
 				2297B0DB592CC4ED9789D0FE /* [CP] Copy Pods Resources */,
+				65AB38DFD97172D4A93A8219 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -481,6 +511,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		65AB38DFD97172D4A93A8219 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6B75EF29E4865A2F6314EA3A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,6 +586,7 @@
 				B776868E1D478C69001D8781 /* MainNewsViewController.swift in Sources */,
 				90A7BD001D43BC7E00FE6C18 /* CircularRevealTransitionAnimator.swift in Sources */,
 				90A7BCAC1D3F759F00FE6C18 /* AppDelegate.swift in Sources */,
+				B7FEA3721D48ADE500EC882F /* LoginViewController.swift in Sources */,
 				90A7BD481D45F65100FE6C18 /* SwipeBetweenViewControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,9 +732,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LenkilaUser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.LenkilaUser;
+				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.LenkilaSportClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -701,9 +751,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LenkilaUser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.LenkilaUser;
+				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.LenkilaSportClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
