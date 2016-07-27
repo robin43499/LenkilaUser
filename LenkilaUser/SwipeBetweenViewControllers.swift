@@ -9,7 +9,7 @@
 import UIKit
 
 //%%% customizeable button attributes
-//let X_BUFFER:CGFloat = 0 //%%% the number of pixels on either side of the segment
+let X_BUFFER:CGFloat = 0 //%%% the number of pixels on either side of the segment
 let Y_BUFFER:CGFloat = 15 //%%% number of pixels on top of the segment
 let HEIGHT:CGFloat = 30   //%%% height of the segment
 
@@ -52,23 +52,36 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
     var pageScrollView :UIScrollView
     var currentPageIndex :Int = 0
 
-        var navDelegate:AnyObject?
-    var selectionBar :UIView
+    var navDelegate:AnyObject?
+    //var selectionBar :UIView
     var panGestureRecognizer :UIPanGestureRecognizer?
     var pageController :UIPageViewController
-    var navigationView :UIView
-    var buttonText :[String] = []
+    //var navigationView :UIView
+    //var buttonText :[String] = []
+    
+    @IBOutlet var selectionBar: UIView!
+    @IBOutlet var navigationView: UIView!
+    
+    var buttonImage = [["home","home_selected"],
+                       ["news","news_selected"],
+                       ["articles","articles_selected"]]
+    
+    var viewControllerArray:[UIViewController] = [UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") as UIViewController,
+                                                  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("News") as UIViewController,
+                                                  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Articles") as UIViewController]
     
     
-    var viewControllerArray:[UIViewController] = [UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("News") as UIViewController,
-                                                  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Chat") as UIViewController,
-                                                  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FindPitch") as UIViewController]
+    @IBOutlet var menuIcon1: UIButton!
+    @IBOutlet var menuIcon2: UIButton!
+    @IBOutlet var menuIcon3: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pageController = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
-        
+        self.pageController = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
+        self.setupPageViewController()
+        self.setupSegmentButtons()
         
 
     }
@@ -88,28 +101,29 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
     //%%% sets up the tabs using a loop.  You can take apart the loop to customize individual buttons, but remember to tag the buttons.  (button.tag=0 and the second button.tag=1, etc)
     func setupSegmentButtons() {
         
-        var navView = UIView(frame: CGRectMake(0,0,self.view.frame.size.width,44))
-        navView.backgroundColor = UIColor.redColor()
-        self.view.addSubview(navView)
-
-        navigationView = UIView(frame: CGRectMake(0,0,self.view.frame.size.width,64))
+        //navigationView = UIView(frame: CGRectMake(X_BUFFER,0,self.view.frame.size.width,44))
+        navigationView.backgroundColor = UIColor.redColor()
 
         let numControllers :Int = viewControllerArray.count
-
-        if (buttonText.count == 0) {
-            buttonText = ["first","second","third","fourth","etc","etc","etc","etc"] //%%%buttontitle
-        }
+        
+        let button = [menuIcon1,menuIcon2,menuIcon3]
 
         for (var i = 0 ; i < numControllers; i++) {
             //let frame :CGRect = CGRectMake(X_BUFFER+CGFloat(i)*(self.view.frame.size.width-2*X_BUFFER)/CGFloat(numControllers)-X_OFFSET, Y_BUFFER, (self.view.frame.size.width-2*X_BUFFER)/CGFloat(numControllers), HEIGHT)
-            let frame :CGRect = CGRectMake(self.view.frame.size.width-(33*CGFloat(3-i)), Y_BUFFER, 22, 22)
-            let button :UIButton = UIButton(frame: frame)
-            navigationView.addSubview(button)
+//            let frame :CGRect = CGRectMake(self.view.frame.size.width-(33*CGFloat(3-i)), Y_BUFFER, 22, 22)
+//            let button :UIButton = UIButton(frame: frame)
+            navigationView.addSubview(button[i])
 
-            button.tag = i //%%% IMPORTANT: if you make your own custom buttons, you have to tag them appropriately
-            button.backgroundColor = UIColor(red: 0.03, green: 0.07, blue: 0.08, alpha: 1) //%%% buttoncolors
-            button.addTarget(self, action: "tapSegmentButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-            button.setTitle(buttonText[i], forState:UIControlState.Normal) //%%%buttontitle
+            button[i].tag = i //%%% IMPORTANT: if you make your own custom buttons, you have to tag them appropriately
+            //button[i].backgroundColor = UIColor(red: 0.03, green: 0.07, blue: 0.08, alpha: 1) //%%% buttoncolors
+            if(i == currentPageIndex){
+                button[i].setImage(UIImage(named: buttonImage[i][0]), forState: UIControlState.Normal)
+            }else{
+               button[i].setImage(UIImage(named: buttonImage[i][1]), forState: UIControlState.Normal)
+            }
+            
+            button[i].addTarget(self, action: "tapSegmentButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+            //button.setTitle(buttonText[i], forState:UIControlState.Normal) //%%%buttontitle
         }
         
 //        pageController.navigationController?.navigationBar.topItem?.titleView = navigationView
@@ -121,8 +135,8 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
     //%%% sets up the selection bar under the buttons on the navigation bar
     func setupSelector() {
         //selectionBar = UIView(frame: CGRectMake(X_BUFFER-X_OFFSET, SELECTOR_Y_BUFFER,(self.view.frame.size.width-2*X_BUFFER)/CGFloat(viewControllerArray.count), SELECTOR_HEIGHT))
-        selectionBar = UIView(frame: CGRectMake(0-X_OFFSET, SELECTOR_Y_BUFFER,28, SELECTOR_HEIGHT))
-        selectionBar.backgroundColor = UIColor.greenColor() //%%% sbcolor
+        //selectionBar = UIView(frame: CGRectMake(0-X_OFFSET, SELECTOR_Y_BUFFER,28, SELECTOR_HEIGHT))
+        //selectionBar.backgroundColor = UIColor.greenColor() //%%% sbcolor
         selectionBar.alpha = 0.8; //%%% sbalpha
         navigationView.addSubview(selectionBar)
     }
@@ -139,7 +153,11 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
     //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
     //%%%%%%%%%%%%%%%%%%        SETUP       %%%%%%%%%%%%%%%%%%//
     //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-    //                                                        //
+    //  
+//    override func viewDidAppear(animated: Bool) {
+//        
+//
+//    }
     override func viewWillAppear(animated: Bool) {
         self.setupPageViewController()
         self.setupSegmentButtons()
@@ -239,18 +257,26 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
     //It extracts the xcoordinate from the center point and instructs the selection bar to move accordingly
     func scrollViewDidScroll(scrollView: UIScrollView) {
         //let xFromCenter:CGFloat = self.view.frame.size.width - pageScrollView.contentOffset.x //%%% positive for right swipe, negative for left
-        let xFromCenter:CGFloat = 66 - 66*(pageScrollView.contentOffset.x/self.view.frame.size.width) //%%% positive for right swipe, negative for left
-        print(xFromCenter)
-        print(self.view.frame.size.width)
-        print(pageScrollView.contentOffset.x)
-
+        let xFromCenter:CGFloat = 60 - 60*(pageScrollView.contentOffset.x/self.view.frame.size.width) //%%% positive for right swipe, negative for left
+        
         //%%% checks to see what page you are on and adjusts the xCoor accordingly.
         //i.e. if you're on the second page, it makes sure that the bar starts from the frame.origin.x of the
         //second tab instead of the beginning
         //let xCoor:CGFloat = X_BUFFER + selectionBar.frame.size.width * CGFloat(currentPageIndex) - X_OFFSET;
-        let xCoor:CGFloat = self.view.frame.size.width-(33*3) - CGFloat(3) + 33 * CGFloat(currentPageIndex);
+        let xCoor:CGFloat = self.view.frame.size.width-(30*3) - CGFloat(4) + 30 * CGFloat(currentPageIndex);
         //selectionBar.frame = CGRectMake(xCoor-xFromCenter/CGFloat(viewControllerArray.count), selectionBar.frame.origin.y, selectionBar.frame.size.width, selectionBar.frame.size.height);
         selectionBar.frame = CGRectMake(xCoor-xFromCenter/CGFloat(viewControllerArray.count), selectionBar.frame.origin.y, selectionBar.frame.size.width, selectionBar.frame.size.height);
+        
+        let button = [menuIcon1,menuIcon2,menuIcon3]
+        
+        for (var i = 0 ; i < viewControllerArray.count; i++) {
+            if(i == currentPageIndex){
+                button[i].setImage(UIImage(named: buttonImage[i][0]), forState: UIControlState.Normal)
+            }else{
+                button[i].setImage(UIImage(named: buttonImage[i][1]), forState: UIControlState.Normal)
+            }
+        }
+
 
     }
     

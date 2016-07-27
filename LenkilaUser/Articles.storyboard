@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7YU-N1-QiK">
+            <objects>
+                <viewController storyboardIdentifier="Articles" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9fx-sx-r79" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k51-JG-egF"/>
+                        <viewControllerLayoutGuide type="bottom" id="IDZ-Q9-fCX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ijl-6W-IcY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNe-EH-mqo">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TNe-EH-mqo" firstAttribute="centerX" secondItem="ijl-6W-IcY" secondAttribute="centerX" id="Jyd-pO-UG8"/>
+                            <constraint firstItem="TNe-EH-mqo" firstAttribute="centerY" secondItem="ijl-6W-IcY" secondAttribute="centerY" id="yiY-vr-0oX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="TNe-EH-mqo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Jyd-pO-UG8"/>
+                                <exclude reference="yiY-vr-0oX"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="TNe-EH-mqo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Jyd-pO-UG8"/>
+                                <include reference="yiY-vr-0oX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMC-ar-wCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="367"/>
+        </scene>
+    </scenes>
+</document>

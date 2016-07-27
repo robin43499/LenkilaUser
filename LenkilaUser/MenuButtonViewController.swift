@@ -17,6 +17,12 @@ class MenuButtonViewController: UIViewController {
     lazy private var menuAnimator : MenuTransitionAnimator! = MenuTransitionAnimator(mode: .Presentation, shouldPassEventsOutsideMenu: false) { [unowned self] in
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         switch (segue.identifier, segue.destinationViewController) {
