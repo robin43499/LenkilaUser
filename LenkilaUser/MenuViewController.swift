@@ -20,11 +20,37 @@ class MenuViewController: UITableViewController {
     weak var delegate: MenuViewControllerDelegate?
     var selectedItem = 0
     
+    //@IBOutlet var dissmissView: UIView!
+    @IBOutlet var sView: UIView!
+    
+    let app = UIApplication.sharedApplication()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.preferredContentSize = CGSizeMake(self.view.frame.size.height/8, self.view.frame.size.height)
+        
+        self.sView.frame = CGRectMake(0,0,self.view.frame.size.height, app.statusBarFrame.size.height)
+        //self.dissmissView.frame = CGRectMake(0,0,self.view.frame.size.height/9,self.view.frame.size.height/9)
+    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         let indexPath = NSIndexPath(forRow: selectedItem, inSection: 0)
         tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return (self.view.frame.size.height - app.statusBarFrame.size.height)/8
+    }
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 8
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MenuTableViewCell
+        cell.imageIcon.image = UIImage(named: "home")
+        
+        return cell
     }
     
 }
@@ -38,7 +64,7 @@ extension MenuViewController {
 //MARK: Menu protocol
 extension  MenuViewController: Menu {
     var menuItems: [UIView] {
-        return [tableView.tableHeaderView!] + tableView.visibleCells
+        return tableView.visibleCells
     }
 }
 
@@ -53,5 +79,9 @@ extension MenuViewController {
         var point = CGPointMake(rect.midX, rect.midY)
         point = tableView.convertPoint(point, toView: nil)
         delegate?.menu(self, didSelectItemAtIndex: indexPath.row, atPoint:point)
+//        var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+//        selectedCell.contentView.backgroundColor = UIColor.redColor()
+    
     }
+    
 }

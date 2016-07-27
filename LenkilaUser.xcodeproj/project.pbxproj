@@ -10,6 +10,8 @@
 		25D57325C1B4525CF56B7865 /* Pods_LenkilaUserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184F03D24F01B19779287687 /* Pods_LenkilaUserTests.framework */; };
 		3C945DAEA188AB295ACB2973 /* Pods_LenkilaUserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6D4C602A37C176DD5E6552 /* Pods_LenkilaUserUITests.framework */; };
 		9058D6791D4885200092329B /* Articles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9058D6781D48851F0092329B /* Articles.storyboard */; };
+		9058D67B1D48B0FB0092329B /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058D67A1D48B0FA0092329B /* UITableViewCell.swift */; };
+		9058D67D1D48C6030092329B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9058D67C1D48C6030092329B /* MenuTableViewCell.swift */; };
 		90A7BCAC1D3F759F00FE6C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7BCAB1D3F759F00FE6C18 /* AppDelegate.swift */; };
 		90A7BCB31D3F759F00FE6C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCB11D3F759F00FE6C18 /* Main.storyboard */; };
 		90A7BCB51D3F759F00FE6C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A7BCB41D3F759F00FE6C18 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		184F03D24F01B19779287687 /* Pods_LenkilaUserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LenkilaUserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6F490A049CCFC6F9EE0646 /* Pods-LenkilaUserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserUITests/Pods-LenkilaUserUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9058D6781D48851F0092329B /* Articles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Articles.storyboard; sourceTree = "<group>"; };
+		9058D67A1D48B0FA0092329B /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		9058D67C1D48C6030092329B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		90A7BCA81D3F759F00FE6C18 /* LenkilaUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LenkilaUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A7BCAB1D3F759F00FE6C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A7BCB21D3F759F00FE6C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 				90A7BCFD1D43BC7700FE6C18 /* CircularRevealAnimator.swift */,
 				90A7BCFF1D43BC7E00FE6C18 /* CircularRevealTransitionAnimator.swift */,
 				90A7BD011D43BD3D00FE6C18 /* AnimationDelegate.swift */,
+				9058D67A1D48B0FA0092329B /* UITableViewCell.swift */,
 			);
 			name = Misc;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				90A7BCFA1D43B47300FE6C18 /* MenuViewController.swift */,
 				90A7BD041D43C19B00FE6C18 /* MenuButtonViewController.swift */,
 				90A7BD471D45F65100FE6C18 /* SwipeBetweenViewControllers.swift */,
+				9058D67C1D48C6030092329B /* MenuTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -538,10 +544,12 @@
 				90A7BD051D43C19B00FE6C18 /* MenuButtonViewController.swift in Sources */,
 				90A7BD021D43BD3D00FE6C18 /* AnimationDelegate.swift in Sources */,
 				B72315121D477B4900B6E018 /* FirstPageViewController.swift in Sources */,
+				9058D67B1D48B0FB0092329B /* UITableViewCell.swift in Sources */,
 				B776868E1D478C69001D8781 /* MainNewsViewController.swift in Sources */,
 				90A7BD001D43BC7E00FE6C18 /* CircularRevealTransitionAnimator.swift in Sources */,
 				90A7BCAC1D3F759F00FE6C18 /* AppDelegate.swift in Sources */,
 				90A7BD481D45F65100FE6C18 /* SwipeBetweenViewControllers.swift in Sources */,
+				9058D67D1D48C6030092329B /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

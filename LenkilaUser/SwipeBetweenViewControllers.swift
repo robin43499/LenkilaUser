@@ -56,8 +56,6 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
     //var selectionBar :UIView
     var panGestureRecognizer :UIPanGestureRecognizer?
     var pageController :UIPageViewController
-    //var navigationView :UIView
-    //var buttonText :[String] = []
     
     @IBOutlet var selectionBar: UIView!
     @IBOutlet var navigationView: UIView!
@@ -65,6 +63,11 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
     var buttonImage = [["home","home_selected"],
                        ["news","news_selected"],
                        ["articles","articles_selected"]]
+    
+    //URL
+//    http://www.flaticon.com/free-icon/house-outline_63272#term=Home&page=1&position=24
+//    http://www.flaticon.com/free-icon/folded-newspaper_69945#term=News&page=1&position=10
+//    http://www.flaticon.com/free-icon/open-book_166088#term=book&page=1&position=90
     
     var viewControllerArray:[UIViewController] = [UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") as UIViewController,
                                                   UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("News") as UIViewController,
@@ -102,7 +105,7 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
     func setupSegmentButtons() {
         
         //navigationView = UIView(frame: CGRectMake(X_BUFFER,0,self.view.frame.size.width,44))
-        navigationView.backgroundColor = UIColor.redColor()
+        //navigationView.backgroundColor = UIColor.redColor()
 
         let numControllers :Int = viewControllerArray.count
         
@@ -117,9 +120,9 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
             button[i].tag = i //%%% IMPORTANT: if you make your own custom buttons, you have to tag them appropriately
             //button[i].backgroundColor = UIColor(red: 0.03, green: 0.07, blue: 0.08, alpha: 1) //%%% buttoncolors
             if(i == currentPageIndex){
-                button[i].setImage(UIImage(named: buttonImage[i][0]), forState: UIControlState.Normal)
+                button[i].setImage(UIImage(named: buttonImage[i][1]), forState: UIControlState.Normal)
             }else{
-               button[i].setImage(UIImage(named: buttonImage[i][1]), forState: UIControlState.Normal)
+               button[i].setImage(UIImage(named: buttonImage[i][0]), forState: UIControlState.Normal)
             }
             
             button[i].addTarget(self, action: "tapSegmentButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -263,7 +266,7 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
         //i.e. if you're on the second page, it makes sure that the bar starts from the frame.origin.x of the
         //second tab instead of the beginning
         //let xCoor:CGFloat = X_BUFFER + selectionBar.frame.size.width * CGFloat(currentPageIndex) - X_OFFSET;
-        let xCoor:CGFloat = self.view.frame.size.width-(30*3) - CGFloat(4) + 30 * CGFloat(currentPageIndex);
+        let xCoor:CGFloat = self.view.frame.size.width-(30*3) - CGFloat(7) + 30 * CGFloat(currentPageIndex);
         //selectionBar.frame = CGRectMake(xCoor-xFromCenter/CGFloat(viewControllerArray.count), selectionBar.frame.origin.y, selectionBar.frame.size.width, selectionBar.frame.size.height);
         selectionBar.frame = CGRectMake(xCoor-xFromCenter/CGFloat(viewControllerArray.count), selectionBar.frame.origin.y, selectionBar.frame.size.width, selectionBar.frame.size.height);
         
@@ -271,9 +274,9 @@ class SwipeBetweenViewControllers: UIViewController, UIPageViewControllerDelegat
         
         for (var i = 0 ; i < viewControllerArray.count; i++) {
             if(i == currentPageIndex){
-                button[i].setImage(UIImage(named: buttonImage[i][0]), forState: UIControlState.Normal)
-            }else{
                 button[i].setImage(UIImage(named: buttonImage[i][1]), forState: UIControlState.Normal)
+            }else{
+                button[i].setImage(UIImage(named: buttonImage[i][0]), forState: UIControlState.Normal)
             }
         }
 
