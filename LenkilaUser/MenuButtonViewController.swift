@@ -40,11 +40,8 @@ extension MenuButtonViewController: MenuViewControllerDelegate {
         transitionPoint = point
         selectedIndex = index
         let vc = ["swipe","blue","green"]
-        
-        let content = storyboard!.instantiateViewControllerWithIdentifier(vc[selectedIndex]) 
-
+        let content = storyboard!.instantiateViewControllerWithIdentifier(vc[selectedIndex])
         self.navigator.setViewControllers([content], animated: true)
-        
         dispatch_async(dispatch_get_main_queue()) {
             self.dismissViewControllerAnimated(true, completion: nil)
         }
