@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwipeViewController-SwipeViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11E94FEDBB311CDD7431EAEC460BF41C</key>
+		<key>0062993097B183BF3415A69006E7BD1E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>26AB3E374F7070F4D15C6A6BDF86ECD6</key>
+		<key>2AE4AE8953C416BF44BC46CAB919B929</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2EF295B76DFFC63DA392B0A72A066FCB</key>
+		<key>348B5FA935E8B11D3F67E7B0C428E461</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6E10991F3144B3292FFCA6F363508E0</key>
+		<key>8ADB788E732C17ABC690734AF1D13C7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B9FD44C3183F01E62BF3E4402A7C398</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE846B01460EC5237417E1F8AFE34293</key>
 		<dict>
 			<key>primary</key>
 			<true/>

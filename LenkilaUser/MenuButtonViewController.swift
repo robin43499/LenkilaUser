@@ -14,12 +14,22 @@ class MenuButtonViewController: UIViewController {
     private var transitionPoint: CGPoint!
     //private var contentType: ContentType = .Music
     private var navigator: UINavigationController!
+    @IBOutlet weak var menu_button: UIButton!
     lazy private var menuAnimator : MenuTransitionAnimator! = MenuTransitionAnimator(mode: .Presentation, shouldPassEventsOutsideMenu: false) { [unowned self] in
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let u = User.allObjects()
+        let user = u[0] as! User
+        let userID = user.id
+        let facebookProfileUrl = "http://graph.facebook.com/\(userID)/picture?type=large"
+        let imgURL = NSURL(string: facebookProfileUrl)
+        let imageData = NSData(contentsOfURL: imgURL!)
+        menu_button.setImage(UIImage(data: imageData!), forState: .Normal)
+        menu_button.layer.cornerRadius = 18
+        menu_button.layer.masksToBounds = true
     }
 
     

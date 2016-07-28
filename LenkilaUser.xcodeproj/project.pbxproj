@@ -31,10 +31,12 @@
 		B72315121D477B4900B6E018 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72315111D477B4900B6E018 /* FirstPageViewController.swift */; };
 		B776868E1D478C69001D8781 /* MainNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776868D1D478C69001D8781 /* MainNewsViewController.swift */; };
 		B77686901D47A9CD001D8781 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B776868F1D47A9CD001D8781 /* Home.storyboard */; };
+		B79C15E91D4A06A400CF504C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15E81D4A06A400CF504C /* HomeViewController.swift */; };
 		B79DCFAA1D48B92F0016B703 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79DCFA91D48B92F0016B703 /* FBSDKShareKit.framework */; };
 		B79DCFAC1D48B9370016B703 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79DCFAB1D48B9370016B703 /* FBSDKCoreKit.framework */; };
 		B79DCFAE1D48B93D0016B703 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79DCFAD1D48B93D0016B703 /* FBSDKLoginKit.framework */; };
 		B7B507501D48BD3800D625D6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B5074F1D48BD3800D625D6 /* Bolts.framework */; };
+		B7CE28001D49CFAF0042C996 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CE27FF1D49CFAF0042C996 /* User.swift */; };
 		B7FEA3721D48ADE500EC882F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FEA3711D48ADE500EC882F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,11 +91,13 @@
 		B72315111D477B4900B6E018 /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
 		B776868D1D478C69001D8781 /* MainNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNewsViewController.swift; sourceTree = "<group>"; };
 		B776868F1D47A9CD001D8781 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B79C15E81D4A06A400CF504C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B79DCFA91D48B92F0016B703 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		B79DCFAB1D48B9370016B703 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		B79DCFAD1D48B93D0016B703 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B7B5074F1D48BD3800D625D6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		B7B507511D48C3DA00D625D6 /* SignInExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignInExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B7CE27FF1D49CFAF0042C996 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7FEA3711D48ADE500EC882F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD948BB6C481E5FC98FD8921 /* Pods-LenkilaUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser.debug.xcconfig"; sourceTree = "<group>"; };
 		C63F24E4A3FB794E01CC3A8F /* Pods-LenkilaUserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUserTests/Pods-LenkilaUserTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 		9058D6761D4884990092329B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B79C15E81D4A06A400CF504C /* HomeViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 		90A7BC9F1D3F759F00FE6C18 = {
 			isa = PBXGroup;
 			children = (
+				B7CE27FE1D49CF650042C996 /* Database */,
 				B7B5074F1D48BD3800D625D6 /* Bolts.framework */,
 				B79DCFAD1D48B93D0016B703 /* FBSDKLoginKit.framework */,
 				B79DCFAB1D48B9370016B703 /* FBSDKCoreKit.framework */,
@@ -289,6 +295,14 @@
 				9058D67C1D48C6030092329B /* MenuTableViewCell.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		B7CE27FE1D49CF650042C996 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				B7CE27FF1D49CFAF0042C996 /* User.swift */,
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 		B7FEA3701D48ADD600EC882F /* Login */ = {
@@ -584,10 +598,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7CE28001D49CFAF0042C996 /* User.swift in Sources */,
 				90A7BCFB1D43B47300FE6C18 /* MenuViewController.swift in Sources */,
 				90A7BCFE1D43BC7700FE6C18 /* CircularRevealAnimator.swift in Sources */,
 				90A7BD051D43C19B00FE6C18 /* MenuButtonViewController.swift in Sources */,
 				90A7BD021D43BD3D00FE6C18 /* AnimationDelegate.swift in Sources */,
+				B79C15E91D4A06A400CF504C /* HomeViewController.swift in Sources */,
 				B72315121D477B4900B6E018 /* FirstPageViewController.swift in Sources */,
 				9058D67B1D48B0FB0092329B /* UITableViewCell.swift in Sources */,
 				B776868E1D478C69001D8781 /* MainNewsViewController.swift in Sources */,

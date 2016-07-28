@@ -84,10 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-LenkilaUser/Realm.framework"
+  install_framework "Pods-LenkilaUser/RealmSwift.framework"
   install_framework "Pods-LenkilaUser/SwipeViewController.framework"
   install_framework "Pods-LenkilaUser/SideMenu.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-LenkilaUser/Realm.framework"
+  install_framework "Pods-LenkilaUser/RealmSwift.framework"
   install_framework "Pods-LenkilaUser/SwipeViewController.framework"
   install_framework "Pods-LenkilaUser/SideMenu.framework"
 fi

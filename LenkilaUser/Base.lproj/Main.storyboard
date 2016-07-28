@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Acw-Kb-i4m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Acw-Kb-i4m">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -79,7 +79,7 @@
                             <constraint firstItem="hyL-oT-8RB" firstAttribute="width" secondItem="aEo-wG-aXe" secondAttribute="width" id="NB8-IE-AXt"/>
                             <constraint firstItem="hyL-oT-8RB" firstAttribute="height" secondItem="aEo-wG-aXe" secondAttribute="height" id="OcX-Wu-Erx"/>
                             <constraint firstItem="o8q-oq-ZJv" firstAttribute="top" secondItem="76v-M2-5cm" secondAttribute="bottom" constant="92" id="Trh-yR-wSQ">
-                                <variation key="widthClass=compact" constant="116"/>
+                                <variation key="widthClass=compact" constant="60"/>
                             </constraint>
                             <constraint firstItem="76v-M2-5cm" firstAttribute="centerX" secondItem="aEo-wG-aXe" secondAttribute="centerX" id="TwH-II-uOX"/>
                             <constraint firstItem="Vcr-pJ-ziN" firstAttribute="top" secondItem="P7g-it-hW5" secondAttribute="bottom" constant="29" id="cm9-X6-hIm"/>
@@ -306,11 +306,15 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR4-3v-P05">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR4-3v-P05">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Epx-kJ-iyj"/>
-                                    <constraint firstAttribute="width" constant="44" id="j2f-ZU-jHc"/>
+                                    <constraint firstAttribute="height" constant="44" id="Epx-kJ-iyj">
+                                        <variation key="widthClass=compact" constant="36"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="44" id="j2f-ZU-jHc">
+                                        <variation key="widthClass=compact" constant="36"/>
+                                    </constraint>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <variation key="default">
@@ -332,7 +336,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WR4-3v-P05" firstAttribute="top" secondItem="2qr-0S-vBp" secondAttribute="top" id="14m-YF-pGt"/>
+                            <constraint firstItem="WR4-3v-P05" firstAttribute="top" secondItem="2qr-0S-vBp" secondAttribute="top" id="14m-YF-pGt">
+                                <variation key="widthClass=compact" constant="4"/>
+                            </constraint>
                             <constraint firstItem="2qr-0S-vBp" firstAttribute="top" secondItem="mNr-2G-FAj" secondAttribute="bottom" id="3zB-uB-vdM">
                                 <variation key="widthClass=compact" constant="-44"/>
                             </constraint>
@@ -390,6 +396,9 @@
                         </variation>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="menu_button" destination="WR4-3v-P05" id="41k-dG-bcF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63s-rQ-2ml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -606,8 +615,7 @@
                                                 <exclude reference="IAg-DI-nje"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="310" y="15" width="16" height="16"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="6Hr-HK-JIz"/>
                                                 <include reference="IAg-DI-nje"/>
@@ -627,8 +635,7 @@
                                                 <exclude reference="sou-4I-OmO"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="303" y="35" width="30" height="4"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="QY9-Uc-3rp"/>
                                                 <include reference="sou-4I-OmO"/>

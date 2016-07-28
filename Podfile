@@ -5,6 +5,7 @@ target 'LenkilaUser' do
 	pod ‘SwipeViewController’
 	pod 'YALSideMenu'
 	pod 'Google/SignIn'
+	pod 'RealmSwift'
 end
 target 'LenkilaUserTests' do
     #inherit! :search_paths
