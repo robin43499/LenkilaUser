@@ -1,23 +1,15 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
-
+use_frameworks!
 target 'LenkilaUser' do
-  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-	pod "SwipeViewController"
+	pod ‘SwipeViewController’
 	pod 'YALSideMenu'
+	pod 'Google/SignIn'
+end
+target 'LenkilaUserTests' do
+    #inherit! :search_paths
+end
 
-  # Pods for LenkilaUser
-
-  target 'LenkilaUserTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'LenkilaUserUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+target 'LenkilaUserUITests' do
+    #inherit! :search_paths
 end
