@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>LTMorphingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MCMHeaderAnimated.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Ophiuchus.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LenkilaUser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -15,6 +30,11 @@
 			<false/>
 		</dict>
 		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Spring.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0062993097B183BF3415A69006E7BD1E</key>
+		<key>2BF08B556D88FF3230E75E2F69784388</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2AE4AE8953C416BF44BC46CAB919B929</key>
+		<key>38E3301CCEC3D3221A8945CDE430AF28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>348B5FA935E8B11D3F67E7B0C428E461</key>
+		<key>3C900E8E2449EBBCC12128A9BDA69E7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8ADB788E732C17ABC690734AF1D13C7B</key>
+		<key>497195DD7AC3D3FA01DC0EA86B1A39F0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B9FD44C3183F01E62BF3E4402A7C398</key>
+		<key>5AAAD5FBE7557FB0044057F68C737F8F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE846B01460EC5237417E1F8AFE34293</key>
+		<key>843BB3264E8A0AE04FE7ABB7B13D04A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B60F206AA8673D8D4F26A6010A19263C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC4E1A58CDE895F263495F787F6D0A43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D21BAC2C79B321B2070B0396C26EDA0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D70F9C79AC54477DDFDC9A703733AEF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

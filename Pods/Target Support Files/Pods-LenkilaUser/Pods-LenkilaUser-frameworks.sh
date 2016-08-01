@@ -84,14 +84,22 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-LenkilaUser/LTMorphingLabel.framework"
+  install_framework "Pods-LenkilaUser/MCMHeaderAnimated.framework"
+  install_framework "Pods-LenkilaUser/Ophiuchus.framework"
   install_framework "Pods-LenkilaUser/Realm.framework"
   install_framework "Pods-LenkilaUser/RealmSwift.framework"
+  install_framework "Pods-LenkilaUser/Spring.framework"
   install_framework "Pods-LenkilaUser/SwipeViewController.framework"
   install_framework "Pods-LenkilaUser/SideMenu.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-LenkilaUser/LTMorphingLabel.framework"
+  install_framework "Pods-LenkilaUser/MCMHeaderAnimated.framework"
+  install_framework "Pods-LenkilaUser/Ophiuchus.framework"
   install_framework "Pods-LenkilaUser/Realm.framework"
   install_framework "Pods-LenkilaUser/RealmSwift.framework"
+  install_framework "Pods-LenkilaUser/Spring.framework"
   install_framework "Pods-LenkilaUser/SwipeViewController.framework"
   install_framework "Pods-LenkilaUser/SideMenu.framework"
 fi
