@@ -1,4 +1,9 @@
 PODS:
+  - AlertOnboarding (1.7)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - DZNEmptyDataSet (1.8.1)
   - FirebaseAnalytics (3.2.1):
     - FirebaseInstanceID (~> 1.0)
     - GoogleInterchangeUtilities (~> 1.2)
@@ -40,6 +45,9 @@ PODS:
   - YALSideMenu (1.2.0)
 
 DEPENDENCIES:
+  - AlertOnboarding
+  - ChameleonFramework
+  - DZNEmptyDataSet
   - Google/SignIn
   - LTMorphingLabel
   - MCMHeaderAnimated
@@ -60,6 +68,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
+  AlertOnboarding: 8b12f5f5de9391da95b27aa880ba717dd6ded693
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FirebaseAnalytics: 0fd6532cb2c3d03cd5cf26ad295ccb091efd3104
   FirebaseInstanceID: a9d923f3d0b6fbf9fac89310860357aaadc34be5
   Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e

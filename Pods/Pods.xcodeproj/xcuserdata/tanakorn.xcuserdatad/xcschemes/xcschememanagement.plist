@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AlertOnboarding-AlertOnboardingXib.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AlertOnboarding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DZNEmptyDataSet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>LTMorphingLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,12 +77,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2BF08B556D88FF3230E75E2F69784388</key>
+		<key>037E186C39FCBD6DAC893F300256D79D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>38E3301CCEC3D3221A8945CDE430AF28</key>
+		<key>16FB872D0D2D4BA0F378AB34D47CF95F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1CD314AE1A72E3B32CF0F16DC36DA426</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>497195DD7AC3D3FA01DC0EA86B1A39F0</key>
+		<key>493BFD360F0DC9B94810F652C9B10DD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52B94D032B3C0B2D46F1CAA2F6ADAFD4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,12 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>843BB3264E8A0AE04FE7ABB7B13D04A9</key>
+		<key>6B38D45B3526EF0D475C0403956665AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B60F206AA8673D8D4F26A6010A19263C</key>
+		<key>9B57F4EE4746045CEAE2D933A3C8EC9E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7C0AEE6E42C790CF034BBDE95D19678</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +132,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D21BAC2C79B321B2070B0396C26EDA0F</key>
+		<key>D41BE7BD067CE0525BC145ADE1FCA74F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D70F9C79AC54477DDFDC9A703733AEF7</key>
+		<key>D453FDC7BEA699DC111E7BFA165B3E75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9B423E71323AC55550DC8A8F7049C8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

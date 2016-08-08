@@ -9,50 +9,71 @@
 import UIKit
 import LTMorphingLabel
 import Spring
-class HomeViewController: UIViewController,LTMorphingLabelDelegate {
+import AlertOnboarding
+import ChameleonFramework
+class HomeViewController: UIViewController,LTMorphingLabelDelegate,AlertOnboardingDelegate {
+    //variable
+    var alertView: AlertOnboarding!
     
+    var arrayOfImage = ["image1", "image2", "image3"]
+    var arrayOfTitle = ["CREATE ACCOUNT", "CHOOSE THE PLANET", "DEPARTURE"]
+    var arrayOfDescription = ["In your profile, you can view the statistics of its operations and the recommandations of friends",
+                              "Purchase tickets on hot tours to your favorite planet and fly to the most comfortable intergalactic spaceships of best companies",
+                              "In the process of flight you will be in cryogenic sleep and supply the body with all the necessary things for life"]
+    //Outlet
+    @IBOutlet weak var btn_buy: UIButton!
+    @IBOutlet weak var vw_level: UIView!
+    @IBOutlet weak var btn_join_in_match: SpringButton!
+    @IBOutlet weak var btn_join_in_event_description: SpringButton!
+    @IBOutlet weak var btn_img_join_in_event: SpringImageView!
+    var status_event : Bool = false
+    @IBOutlet weak var event_description: SpringView!
     @IBOutlet weak var place_in_event: UILabel!
     @IBOutlet weak var date_in_event: UILabel!
     @IBOutlet weak var title_in_event: UILabel!
     @IBOutlet weak var view_in_event: UIView!
     @IBOutlet weak var img_cover: SpringImageView!
-    @IBOutlet weak var img_lenkila: SpringImageView!
-    @IBOutlet weak var sub_title: LTMorphingLabel!
-    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var btn_vote: UIButton!
+    @IBOutlet weak var btn_review: UIButton!
+    //action
+    @IBOutlet weak var lb_lb_discount: UILabel!
+    @IBAction func btn_join_in_event_action(sender: SpringButton) {
+        btn_join_in_event_description.animation = "zoomIn"
+        btn_join_in_event_description.animate()
+        self.alertView.show()
+            }
     override func viewDidLoad() {
         super.viewDidLoad()
-        sub_title.delegate = self
-        sub_title.morphingEffect = .Scale
-        self.sub_title.text = "Play sports"
-        self.delay(3){
-            self.sub_title.text = "dare to conquer the world"
-        }
-        self.delay(6){
-            self.sub_title.font = UIFont(name: "HelveticaNeue-CondensedBold",size: 45)
-            self.sub_title.textColor = UIColor.blackColor()
-            self.sub_title.text = "Lenkila"
-            
-        }
-        self.delay(9){
-            self.sub_title.hidden = true
-            self.img_lenkila.hidden = false
-            self.img_lenkila.animate()
-            self.img_lenkila.animateToNext({
+        btn_join_in_event_description.layer.cornerRadius = 20
+        btn_join_in_event_description.layer.masksToBounds = true
+        vw_level.layer.cornerRadius = 18
+        vw_level.layer.masksToBounds = true
+        btn_join_in_match.layer.cornerRadius = 20
+        btn_join_in_match.layer.masksToBounds = true
+        btn_buy.layer.cornerRadius = 18
+        btn_buy.layer.masksToBounds = true
+        lb_lb_discount.layer.cornerRadius = 18
+        lb_lb_discount.layer.masksToBounds = true
+        btn_vote.layer.cornerRadius = 5
+        btn_vote.layer.masksToBounds = true
+        btn_review.layer.cornerRadius = 15
+        btn_review.layer.masksToBounds = true
                 self.img_cover.hidden = false
                 self.img_cover.animate()
-            })
-        }
-        self.delay(13.8){
+                self.event_description.hidden = false
+                self.event_description.animate()
+        self.delay(0.8){
             self.view_in_event.hidden = false
             self.title_in_event.hidden = false
             self.date_in_event.hidden = false
             self.place_in_event.hidden = false
         }
+        alertView = AlertOnboarding(arrayOfImage: arrayOfImage, arrayOfTitle: arrayOfTitle, arrayOfDescription: arrayOfDescription)
+        alertView.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     func delay(delay:Double, closure:()->()) {
         dispatch_after(
@@ -62,14 +83,16 @@ class HomeViewController: UIViewController,LTMorphingLabelDelegate {
             ),
             dispatch_get_main_queue(), closure)
     }
+    //Delegate Method
+    func alertOnboardingSkipped(currentStep: Int, maxStep: Int) {
+        print("Onboarding skipped the \(currentStep) step and the max step he saw was the number \(maxStep)")
+    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func alertOnboardingCompleted() {
+        print("Onboarding completed!")
+    }
+    
+    func alertOnboardingNext(nextStep: Int) {
+        print("Next step triggered! \(nextStep)")
+    }
 }

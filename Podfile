@@ -10,6 +10,9 @@ target 'LenkilaUser' do
 	pod 'Ophiuchus', '~> 1.0.3'
 	pod ‘MCMHeaderAnimated’
 	pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
+	pod 'AlertOnboarding'
+	pod ‘DZNEmptyDataSet’
+	pod 'ChameleonFramework'
 end
 target 'LenkilaUserTests' do
 end

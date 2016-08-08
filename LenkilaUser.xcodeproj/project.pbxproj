@@ -39,6 +39,10 @@
 		B72B1B321D4EFA1A006000DF /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72B1B281D4EFA1A006000DF /* Rubik-Medium.ttf */; };
 		B72B1B331D4EFA1A006000DF /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72B1B291D4EFA1A006000DF /* Rubik-MediumItalic.ttf */; };
 		B72B1B341D4EFA1A006000DF /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72B1B2A1D4EFA1A006000DF /* Rubik-Regular.ttf */; };
+		B75BB00A1D530A5F00748157 /* lv1.png in Resources */ = {isa = PBXBuildFile; fileRef = B75BB0091D530A5F00748157 /* lv1.png */; };
+		B75BB00F1D53163300748157 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = B75BB00E1D53163300748157 /* information.png */; };
+		B75BB0121D53237800748157 /* liverpool.png in Resources */ = {isa = PBXBuildFile; fileRef = B75BB0111D53237800748157 /* liverpool.png */; };
+		B75BB0141D5323F800748157 /* chelsea.png in Resources */ = {isa = PBXBuildFile; fileRef = B75BB0131D5323F800748157 /* chelsea.png */; };
 		B776868E1D478C69001D8781 /* MainNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776868D1D478C69001D8781 /* MainNewsViewController.swift */; };
 		B77686901D47A9CD001D8781 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B776868F1D47A9CD001D8781 /* Home.storyboard */; };
 		B79C15E91D4A06A400CF504C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15E81D4A06A400CF504C /* HomeViewController.swift */; };
@@ -46,6 +50,9 @@
 		B79DCFAC1D48B9370016B703 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79DCFAB1D48B9370016B703 /* FBSDKCoreKit.framework */; };
 		B79DCFAE1D48B93D0016B703 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79DCFAD1D48B93D0016B703 /* FBSDKLoginKit.framework */; };
 		B7B507501D48BD3800D625D6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B5074F1D48BD3800D625D6 /* Bolts.framework */; };
+		B7BA80F51D55DBDA00EC3B56 /* liverpool_kit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7BA80F41D55DBDA00EC3B56 /* liverpool_kit.jpg */; };
+		B7BA80FE1D55E7E900EC3B56 /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BA80FD1D55E7E900EC3B56 /* football.png */; };
+		B7BA81001D57125500EC3B56 /* shop.png in Resources */ = {isa = PBXBuildFile; fileRef = B7BA80FF1D57125500EC3B56 /* shop.png */; };
 		B7CE28001D49CFAF0042C996 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CE27FF1D49CFAF0042C996 /* User.swift */; };
 		B7FEA3721D48ADE500EC882F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FEA3711D48ADE500EC882F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -109,6 +116,10 @@
 		B72B1B281D4EFA1A006000DF /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		B72B1B291D4EFA1A006000DF /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
 		B72B1B2A1D4EFA1A006000DF /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		B75BB0091D530A5F00748157 /* lv1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lv1.png; sourceTree = "<group>"; };
+		B75BB00E1D53163300748157 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
+		B75BB0111D53237800748157 /* liverpool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liverpool.png; sourceTree = "<group>"; };
+		B75BB0131D5323F800748157 /* chelsea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chelsea.png; sourceTree = "<group>"; };
 		B776868D1D478C69001D8781 /* MainNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNewsViewController.swift; sourceTree = "<group>"; };
 		B776868F1D47A9CD001D8781 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B79C15E81D4A06A400CF504C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +128,9 @@
 		B79DCFAD1D48B93D0016B703 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B7B5074F1D48BD3800D625D6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		B7B507511D48C3DA00D625D6 /* SignInExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignInExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B7BA80F41D55DBDA00EC3B56 /* liverpool_kit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = liverpool_kit.jpg; sourceTree = "<group>"; };
+		B7BA80FD1D55E7E900EC3B56 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
+		B7BA80FF1D57125500EC3B56 /* shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shop.png; sourceTree = "<group>"; };
 		B7CE27FF1D49CFAF0042C996 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7FEA3711D48ADE500EC882F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD948BB6C481E5FC98FD8921 /* Pods-LenkilaUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenkilaUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LenkilaUser/Pods-LenkilaUser.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +211,7 @@
 		90A7BC9F1D3F759F00FE6C18 = {
 			isa = PBXGroup;
 			children = (
+				B75BB0071D5309EF00748157 /* Picture */,
 				B72B1B201D4EFA0B006000DF /* Fonts */,
 				B7CE27FE1D49CF650042C996 /* Database */,
 				B7B5074F1D48BD3800D625D6 /* Bolts.framework */,
@@ -335,6 +350,60 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		B75BB0071D5309EF00748157 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				B7BA80F61D55E28100EC3B56 /* Sport */,
+				B7BA80F31D55DBD300EC3B56 /* Shop */,
+				B75BB0101D53230E00748157 /* Team Logo */,
+				B75BB00B1D53120900748157 /* Home */,
+				B75BB0081D5309F700748157 /* Level */,
+			);
+			name = Picture;
+			sourceTree = "<group>";
+		};
+		B75BB0081D5309F700748157 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				B75BB0091D530A5F00748157 /* lv1.png */,
+			);
+			name = Level;
+			sourceTree = "<group>";
+		};
+		B75BB00B1D53120900748157 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B75BB00E1D53163300748157 /* information.png */,
+				B7BA80FF1D57125500EC3B56 /* shop.png */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		B75BB0101D53230E00748157 /* Team Logo */ = {
+			isa = PBXGroup;
+			children = (
+				B75BB0111D53237800748157 /* liverpool.png */,
+				B75BB0131D5323F800748157 /* chelsea.png */,
+			);
+			name = "Team Logo";
+			sourceTree = "<group>";
+		};
+		B7BA80F31D55DBD300EC3B56 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				B7BA80F41D55DBDA00EC3B56 /* liverpool_kit.jpg */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
+		B7BA80F61D55E28100EC3B56 /* Sport */ = {
+			isa = PBXGroup;
+			children = (
+				B7BA80FD1D55E7E900EC3B56 /* football.png */,
+			);
+			name = Sport;
+			sourceTree = "<group>";
+		};
 		B7CE27FE1D49CF650042C996 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,7 +498,7 @@
 				TargetAttributes = {
 					90A7BCA71D3F759F00FE6C18 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = ZTBG465V4E;
+						DevelopmentTeam = KW6467J3NC;
 					};
 					90A7BCBD1D3F759F00FE6C18 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -473,17 +542,24 @@
 				9058D6791D4885200092329B /* Articles.storyboard in Resources */,
 				B72B1B301D4EFA1A006000DF /* Rubik-Light.ttf in Resources */,
 				B72B1B311D4EFA1A006000DF /* Rubik-LightItalic.ttf in Resources */,
+				B75BB00F1D53163300748157 /* information.png in Resources */,
 				B72B1B321D4EFA1A006000DF /* Rubik-Medium.ttf in Resources */,
 				90A7BCE01D3F8B1200FE6C18 /* FindPitch.storyboard in Resources */,
 				90A7BCB81D3F759F00FE6C18 /* LaunchScreen.storyboard in Resources */,
 				90A7BCB51D3F759F00FE6C18 /* Assets.xcassets in Resources */,
+				B75BB0121D53237800748157 /* liverpool.png in Resources */,
 				B72B1B331D4EFA1A006000DF /* Rubik-MediumItalic.ttf in Resources */,
+				B75BB00A1D530A5F00748157 /* lv1.png in Resources */,
+				B7BA80FE1D55E7E900EC3B56 /* football.png in Resources */,
 				90A7BCB31D3F759F00FE6C18 /* Main.storyboard in Resources */,
 				B72B1B341D4EFA1A006000DF /* Rubik-Regular.ttf in Resources */,
 				B72B1B2B1D4EFA1A006000DF /* Rubik-Black.ttf in Resources */,
 				B72B1B2F1D4EFA1A006000DF /* Rubik-Italic.ttf in Resources */,
 				90A7BCDE1D3F8AFF00FE6C18 /* Chat.storyboard in Resources */,
+				B7BA80F51D55DBDA00EC3B56 /* liverpool_kit.jpg in Resources */,
+				B75BB0141D5323F800748157 /* chelsea.png in Resources */,
 				90A7BCDC1D3F8AF100FE6C18 /* News.storyboard in Resources */,
+				B7BA81001D57125500EC3B56 /* shop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,7 +886,7 @@
 				);
 				INFOPLIST_FILE = LenkilaUser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.LenkilaSportClub;
+				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.Lenkila;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -829,7 +905,7 @@
 				);
 				INFOPLIST_FILE = LenkilaUser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.LenkilaSportClub;
+				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.Lenkila;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

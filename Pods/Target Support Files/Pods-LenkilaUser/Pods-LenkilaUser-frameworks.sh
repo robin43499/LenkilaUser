@@ -84,6 +84,9 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-LenkilaUser/AlertOnboarding.framework"
+  install_framework "Pods-LenkilaUser/ChameleonFramework.framework"
+  install_framework "Pods-LenkilaUser/DZNEmptyDataSet.framework"
   install_framework "Pods-LenkilaUser/LTMorphingLabel.framework"
   install_framework "Pods-LenkilaUser/MCMHeaderAnimated.framework"
   install_framework "Pods-LenkilaUser/Ophiuchus.framework"
@@ -94,6 +97,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-LenkilaUser/SideMenu.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-LenkilaUser/AlertOnboarding.framework"
+  install_framework "Pods-LenkilaUser/ChameleonFramework.framework"
+  install_framework "Pods-LenkilaUser/DZNEmptyDataSet.framework"
   install_framework "Pods-LenkilaUser/LTMorphingLabel.framework"
   install_framework "Pods-LenkilaUser/MCMHeaderAnimated.framework"
   install_framework "Pods-LenkilaUser/Ophiuchus.framework"

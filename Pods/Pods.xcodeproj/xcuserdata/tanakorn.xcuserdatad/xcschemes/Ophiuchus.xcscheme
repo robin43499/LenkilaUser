@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CBC76FA01913DB97DA63E89A'
+               BlueprintIdentifier = '99AB8FEA54974724119B553E'
                BlueprintName = 'Ophiuchus'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Ophiuchus.framework'>

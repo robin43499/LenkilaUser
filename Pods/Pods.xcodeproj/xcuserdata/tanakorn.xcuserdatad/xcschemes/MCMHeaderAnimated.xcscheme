@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '89A8E335DEEEB9F7471049AF'
+               BlueprintIdentifier = '7DA2FF120F07F68ED369721E'
                BlueprintName = 'MCMHeaderAnimated'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'MCMHeaderAnimated.framework'>
