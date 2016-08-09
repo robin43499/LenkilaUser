@@ -4,6 +4,41 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AlertOnboarding-AlertOnboardingXib.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AlertOnboarding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DZNEmptyDataSet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LTMorphingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MCMHeaderAnimated.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Ophiuchus.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LenkilaUser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -15,6 +50,11 @@
 			<false/>
 		</dict>
 		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Spring.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +77,72 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0062993097B183BF3415A69006E7BD1E</key>
+		<key>037E186C39FCBD6DAC893F300256D79D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2AE4AE8953C416BF44BC46CAB919B929</key>
+		<key>16FB872D0D2D4BA0F378AB34D47CF95F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>348B5FA935E8B11D3F67E7B0C428E461</key>
+		<key>1CD314AE1A72E3B32CF0F16DC36DA426</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8ADB788E732C17ABC690734AF1D13C7B</key>
+		<key>3C900E8E2449EBBCC12128A9BDA69E7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B9FD44C3183F01E62BF3E4402A7C398</key>
+		<key>493BFD360F0DC9B94810F652C9B10DD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE846B01460EC5237417E1F8AFE34293</key>
+		<key>52B94D032B3C0B2D46F1CAA2F6ADAFD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5AAAD5FBE7557FB0044057F68C737F8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6B38D45B3526EF0D475C0403956665AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B57F4EE4746045CEAE2D933A3C8EC9E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7C0AEE6E42C790CF034BBDE95D19678</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC4E1A58CDE895F263495F787F6D0A43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D41BE7BD067CE0525BC145ADE1FCA74F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D453FDC7BEA699DC111E7BFA165B3E75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9B423E71323AC55550DC8A8F7049C8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
