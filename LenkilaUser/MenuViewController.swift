@@ -24,6 +24,7 @@ class MenuViewController: UITableViewController {
     @IBOutlet var sView: UIView!
     
     let app = UIApplication.sharedApplication()
+    let image = ["home","profile","calendar","topup","gift","trophy","setting","logout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +49,7 @@ class MenuViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MenuTableViewCell
-        cell.imageIcon.image = UIImage(named: "home")
+        cell.imageIcon.image = UIImage(named: image[indexPath.row])
         
         return cell
     }

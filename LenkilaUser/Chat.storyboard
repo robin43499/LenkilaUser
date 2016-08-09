@@ -1,42 +1,140 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q89-Ih-wEc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="RQu-p6-zAm">
+        <scene sceneID="dNR-gr-eMp">
             <objects>
-                <viewController storyboardIdentifier="Chat" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q89-Ih-wEc" sceneMemberID="viewController">
+                <viewController id="14u-at-7jC" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VSw-cj-6A1"/>
-                        <viewControllerLayoutGuide type="bottom" id="z4h-z4-eJZ"/>
+                        <viewControllerLayoutGuide type="top" id="8W7-II-zgo"/>
+                        <viewControllerLayoutGuide type="bottom" id="JTj-IW-fz3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dy4-yS-Bp8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="2Da-De-sbg">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOD-PU-14f">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="party" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jv5-ox-g08">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="184" y="289" width="37" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GOD-PU-14f" firstAttribute="centerX" secondItem="dy4-yS-Bp8" secondAttribute="centerX" id="RGL-aW-3Re"/>
-                            <constraint firstItem="GOD-PU-14f" firstAttribute="centerY" secondItem="dy4-yS-Bp8" secondAttribute="centerY" id="Rxe-6m-B7u"/>
+                            <constraint firstItem="jv5-ox-g08" firstAttribute="centerY" secondItem="2Da-De-sbg" secondAttribute="centerY" id="6qj-o2-Dr5"/>
+                            <constraint firstItem="jv5-ox-g08" firstAttribute="centerX" secondItem="2Da-De-sbg" secondAttribute="centerX" id="gxj-z4-gWF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jv5-ox-g08"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6qj-o2-Dr5"/>
+                                <exclude reference="gxj-z4-gWF"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jv5-ox-g08"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6qj-o2-Dr5"/>
+                                <include reference="gxj-z4-gWF"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="Kj1-FX-grW"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mpe-zv-iqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DaR-8J-3MZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="357" y="441"/>
+            <point key="canvasLocation" x="69" y="822"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="otk-IO-PwJ">
+            <objects>
+                <viewController id="ttE-yI-sUO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m5j-Hs-Kyx"/>
+                        <viewControllerLayoutGuide type="bottom" id="60Q-Jl-W0N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aAD-L2-nlP">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGh-RV-gYd">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xGh-RV-gYd" firstAttribute="centerX" secondItem="aAD-L2-nlP" secondAttribute="centerX" id="SwW-A7-96d"/>
+                            <constraint firstItem="xGh-RV-gYd" firstAttribute="centerY" secondItem="aAD-L2-nlP" secondAttribute="centerY" id="zzd-Zx-9ql"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xGh-RV-gYd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="SwW-A7-96d"/>
+                                <exclude reference="zzd-Zx-9ql"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xGh-RV-gYd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="SwW-A7-96d"/>
+                                <include reference="zzd-Zx-9ql"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="YHU-F8-Bm5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PuR-ek-H3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="162"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cqu-oc-I01">
+            <objects>
+                <tabBarController id="AU4-b7-vav" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="c32-tM-x40"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="jK9-Nk-730">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ttE-yI-sUO" kind="relationship" relationship="viewControllers" id="mAL-LW-TJW"/>
+                        <segue destination="14u-at-7jC" kind="relationship" relationship="viewControllers" id="PLK-Zd-t14"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EqH-oL-AMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="552"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aHZ-Vq-OKf">
+            <objects>
+                <navigationController storyboardIdentifier="Chat" useStoryboardIdentifierAsRestorationIdentifier="YES" id="osp-pI-ju8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H9h-MV-dv3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AU4-b7-vav" kind="relationship" relationship="rootViewController" id="eHX-xQ-PHE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZ8-89-fJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1788" y="565"/>
         </scene>
     </scenes>
 </document>

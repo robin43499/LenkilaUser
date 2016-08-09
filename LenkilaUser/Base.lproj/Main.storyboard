@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Acw-Kb-i4m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Acw-Kb-i4m">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -344,6 +344,9 @@
                             </constraint>
                             <constraint firstItem="mNr-2G-FAj" firstAttribute="centerX" secondItem="6my-Sl-zAF" secondAttribute="centerX" id="GiC-o6-jhF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2qr-0S-vBp" secondAttribute="trailing" constant="-20" id="Kmx-pB-fEu"/>
+                            <constraint firstItem="WR4-3v-P05" firstAttribute="leading" secondItem="6my-Sl-zAF" secondAttribute="leadingMargin" constant="4" id="OBs-Eh-8Uf">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="mNr-2G-FAj" secondAttribute="trailing" constant="-20" id="On9-HP-puy"/>
                             <constraint firstItem="mNr-2G-FAj" firstAttribute="top" secondItem="6my-Sl-zAF" secondAttribute="topMargin" id="Rgv-fJ-ezg"/>
                             <constraint firstItem="WR4-3v-P05" firstAttribute="leading" secondItem="6my-Sl-zAF" secondAttribute="leadingMargin" id="W4P-cS-I3v"/>
@@ -363,6 +366,7 @@
                             <mask key="constraints">
                                 <exclude reference="azd-8l-pr3"/>
                                 <exclude reference="14m-YF-pGt"/>
+                                <exclude reference="OBs-Eh-8Uf"/>
                                 <exclude reference="W4P-cS-I3v"/>
                                 <exclude reference="3zB-uB-vdM"/>
                                 <exclude reference="Kmx-pB-fEu"/>
@@ -383,7 +387,8 @@
                             <mask key="constraints">
                                 <include reference="azd-8l-pr3"/>
                                 <include reference="14m-YF-pGt"/>
-                                <include reference="W4P-cS-I3v"/>
+                                <include reference="OBs-Eh-8Uf"/>
+                                <exclude reference="W4P-cS-I3v"/>
                                 <exclude reference="3zB-uB-vdM"/>
                                 <include reference="Kmx-pB-fEu"/>
                                 <include reference="sIA-GQ-TSq"/>
@@ -432,9 +437,9 @@
                                     <color key="backgroundColor" red="0.15294117647058825" green="0.14901960784313725" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="jyU-63-jp6" firstAttribute="centerY" secondItem="2o0-fS-7oA" secondAttribute="centerY" id="Abu-Bl-kkP"/>
-                                        <constraint firstItem="jyU-63-jp6" firstAttribute="width" secondItem="2o0-fS-7oA" secondAttribute="width" multiplier="0.75" id="UvN-H9-mSQ"/>
+                                        <constraint firstItem="jyU-63-jp6" firstAttribute="width" secondItem="2o0-fS-7oA" secondAttribute="width" multiplier="0.5" id="UvN-H9-mSQ"/>
                                         <constraint firstItem="jyU-63-jp6" firstAttribute="centerX" secondItem="2o0-fS-7oA" secondAttribute="centerX" id="crd-C2-09s"/>
-                                        <constraint firstItem="jyU-63-jp6" firstAttribute="height" secondItem="2o0-fS-7oA" secondAttribute="height" multiplier="0.75" id="oqz-wh-g6j"/>
+                                        <constraint firstItem="jyU-63-jp6" firstAttribute="height" secondItem="2o0-fS-7oA" secondAttribute="height" multiplier="0.5" id="oqz-wh-g6j"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
